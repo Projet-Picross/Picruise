@@ -1,0 +1,360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier grille_predef.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier grille_predef.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ensemble de fonctions servant à l'affichage des matrices ainsi qu'un petit menu.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:aab9eac84a6f717b9342a7eb15ce177ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#aab9eac84a6f717b9342a7eb15ce177ad">init_matrice_predef</a> (int n, int matrice[n][n])</td></tr>
+<tr class="memdesc:aab9eac84a6f717b9342a7eb15ce177ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le fichier contenant les matrices prédéfinies est de la forme : # nom_matrice - taille_matrice - puis suite de coordonnées des points.  <a href="grille__predef_8c.html#aab9eac84a6f717b9342a7eb15ce177ad">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aab9eac84a6f717b9342a7eb15ce177ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14a5bf4e2174a9aebd013ca62d2e13c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a14a5bf4e2174a9aebd013ca62d2e13c0">affiche_matrice_predef</a> (int n, int matrice[n][n])</td></tr>
+<tr class="memdesc:a14a5bf4e2174a9aebd013ca62d2e13c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affiche la matrice passée en paramètre.  <a href="grille__predef_8c.html#a14a5bf4e2174a9aebd013ca62d2e13c0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a14a5bf4e2174a9aebd013ca62d2e13c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3ee5c674c17ebcc160de655dabcdf08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#ac3ee5c674c17ebcc160de655dabcdf08">affecter_matrice_predef</a> (int n, int matrice[n][n])</td></tr>
+<tr class="memdesc:ac3ee5c674c17ebcc160de655dabcdf08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier.  <a href="grille__predef_8c.html#ac3ee5c674c17ebcc160de655dabcdf08">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ac3ee5c674c17ebcc160de655dabcdf08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4a5c26f3b695bc79b1e93770c3a08e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#af4a5c26f3b695bc79b1e93770c3a08e8">transfert_mat</a> (int marqueur)</td></tr>
+<tr class="memdesc:af4a5c26f3b695bc79b1e93770c3a08e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui récupère une matrice précise parmi celles du fichier.  <a href="grille__predef_8c.html#af4a5c26f3b695bc79b1e93770c3a08e8">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af4a5c26f3b695bc79b1e93770c3a08e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4787a41a764e4bbed39e39b920986f99"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a4787a41a764e4bbed39e39b920986f99">nb_matrice</a> ()</td></tr>
+<tr class="memdesc:a4787a41a764e4bbed39e39b920986f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui compte le nombre de matrices présentes dans le fichier.  <a href="grille__predef_8c.html#a4787a41a764e4bbed39e39b920986f99">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4787a41a764e4bbed39e39b920986f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141611376620a6be6e34aabac99af4c3"><td class="memItemLeft" align="right" valign="top"><a id="a141611376620a6be6e34aabac99af4c3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a141611376620a6be6e34aabac99af4c3">liste_matrice</a> ()</td></tr>
+<tr class="memdesc:a141611376620a6be6e34aabac99af4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui affiche le choix des matrices possibles pour l'utilisateur. <br /></td></tr>
+<tr class="separator:a141611376620a6be6e34aabac99af4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962d6ce334108b337ce4f523ba072d63"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a962d6ce334108b337ce4f523ba072d63">taille_mat_choix</a> (int choix)</td></tr>
+<tr class="memdesc:a962d6ce334108b337ce4f523ba072d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui récupère la taille de la matrice voulue dans le fichier.  <a href="grille__predef_8c.html#a962d6ce334108b337ce4f523ba072d63">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a962d6ce334108b337ce4f523ba072d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d471e6822b17219d89a60ef21f960e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#ad5d471e6822b17219d89a60ef21f960e">choix_matrice</a> ()</td></tr>
+<tr class="memdesc:ad5d471e6822b17219d89a60ef21f960e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui récupère le numéro de la matrice voulue par l'utilisateur.  <a href="grille__predef_8c.html#ad5d471e6822b17219d89a60ef21f960e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ad5d471e6822b17219d89a60ef21f960e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a520f64eef24d4bdf540a062edbcbae02"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a520f64eef24d4bdf540a062edbcbae02">matrice_random</a> ()</td></tr>
+<tr class="memdesc:a520f64eef24d4bdf540a062edbcbae02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui retourne un entier aléatoire allant de 1 jusqu'au nombre de matrice.  <a href="grille__predef_8c.html#a520f64eef24d4bdf540a062edbcbae02">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a520f64eef24d4bdf540a062edbcbae02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a8c69f8b51c06c11110b56707f6e194b9"><td class="memItemLeft" align="right" valign="top"><a id="a8c69f8b51c06c11110b56707f6e194b9"></a>
+FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a8c69f8b51c06c11110b56707f6e194b9">fichier</a></td></tr>
+<tr class="memdesc:a8c69f8b51c06c11110b56707f6e194b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fichiers de sauvegardes. <br /></td></tr>
+<tr class="separator:a8c69f8b51c06c11110b56707f6e194b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fcf53d02f7701c8f476c48cf8870217"><td class="memItemLeft" align="right" valign="top"><a id="a1fcf53d02f7701c8f476c48cf8870217"></a>
+FILE *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="grille__predef_8c.html#a1fcf53d02f7701c8f476c48cf8870217">fichier2</a></td></tr>
+<tr class="memdesc:a1fcf53d02f7701c8f476c48cf8870217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fichiers de sauvegardes. <br /></td></tr>
+<tr class="separator:a1fcf53d02f7701c8f476c48cf8870217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ensemble de fonctions servant à l'affichage des matrices ainsi qu'un petit menu. </p>
+<dl class="section version"><dt>Version</dt><dd>1.3 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>17 Février 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ac3ee5c674c17ebcc160de655dabcdf08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3ee5c674c17ebcc160de655dabcdf08">&#9670;&nbsp;</a></span>affecter_matrice_predef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affecter_matrice_predef </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[n][n]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>est un entier indiquant la taille de la matrice à remplir </td></tr>
+    <tr><td class="paramname">matrice</td><td>est la matrice à remplir </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a14a5bf4e2174a9aebd013ca62d2e13c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14a5bf4e2174a9aebd013ca62d2e13c0">&#9670;&nbsp;</a></span>affiche_matrice_predef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affiche_matrice_predef </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[n][n]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affiche la matrice passée en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>est un entier indiquant la taille de la matrice à afficher </td></tr>
+    <tr><td class="paramname">matrice</td><td>est la matrice à afficher </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad5d471e6822b17219d89a60ef21f960e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5d471e6822b17219d89a60ef21f960e">&#9670;&nbsp;</a></span>choix_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int choix_matrice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui récupère le numéro de la matrice voulue par l'utilisateur. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>t un entier représentant le numéro de la matrice voulue par l'utilisateur </dd></dl>
+
+</div>
+</div>
+<a id="aab9eac84a6f717b9342a7eb15ce177ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab9eac84a6f717b9342a7eb15ce177ad">&#9670;&nbsp;</a></span>init_matrice_predef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_matrice_predef </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[n][n]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Le fichier contenant les matrices prédéfinies est de la forme : # nom_matrice - taille_matrice - puis suite de coordonnées des points. </p>
+<p>Initialise la matrice passée en paramètre avec des 0 </p><dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>est un entier indiquant la taille de la matrice à initialiser </td></tr>
+    <tr><td class="paramname">matrice</td><td>est la matrice à initialiser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a520f64eef24d4bdf540a062edbcbae02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a520f64eef24d4bdf540a062edbcbae02">&#9670;&nbsp;</a></span>matrice_random()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int matrice_random </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui retourne un entier aléatoire allant de 1 jusqu'au nombre de matrice. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>t un entier représentant le numéro de la matrice </dd></dl>
+
+</div>
+</div>
+<a id="a4787a41a764e4bbed39e39b920986f99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4787a41a764e4bbed39e39b920986f99">&#9670;&nbsp;</a></span>nb_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nb_matrice </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui compte le nombre de matrices présentes dans le fichier. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>nb un entier </dd></dl>
+
+</div>
+</div>
+<a id="a962d6ce334108b337ce4f523ba072d63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a962d6ce334108b337ce4f523ba072d63">&#9670;&nbsp;</a></span>taille_mat_choix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int taille_mat_choix </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>choix</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui récupère la taille de la matrice voulue dans le fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">choix</td><td>est un entier indiquant le numéro de la matrice dont on souhaite récupérer la taille </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>nb un entier représentant la taille de matrice voulue </dd></dl>
+
+</div>
+</div>
+<a id="af4a5c26f3b695bc79b1e93770c3a08e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4a5c26f3b695bc79b1e93770c3a08e8">&#9670;&nbsp;</a></span>transfert_mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void transfert_mat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>marqueur</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui récupère une matrice précise parmi celles du fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">marqueur</td><td>est un entier indiquant le numéro de la matrice à récupérer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

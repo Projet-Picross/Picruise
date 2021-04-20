@@ -1,0 +1,288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier jeu.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier jeu.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions réalisant la phase d'intéraction du joueur avec la grille.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;../src/jeu.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a8706089cdfd1308f6670f51ac7ca2d10"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#a8706089cdfd1308f6670f51ac7ca2d10">jouer</a> (SDL_Window *window, SDL_Renderer *renderer, SDL_Rect *r, int *grille, int *mat_cond_l, int *mat_cond_c, int nb_max_cond_lignes, int nb_max_cond_colonnes, int format)</td></tr>
+<tr class="memdesc:a8706089cdfd1308f6670f51ac7ca2d10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction réalise la phase d'intéraction du joueur sur la grille.  <a href="jeu_8c.html#a8706089cdfd1308f6670f51ac7ca2d10">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8706089cdfd1308f6670f51ac7ca2d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72d59a0f7935c53d168ff81ebe5c820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#aa72d59a0f7935c53d168ff81ebe5c820">nb_max_cond</a> (int *mat_cond, int format)</td></tr>
+<tr class="memdesc:aa72d59a0f7935c53d168ff81ebe5c820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul le nombre maximum de conditions de la matrice.  <a href="jeu_8c.html#aa72d59a0f7935c53d168ff81ebe5c820">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa72d59a0f7935c53d168ff81ebe5c820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6925accc3b2009a45f13557bc7d8f7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="jeu_8c.html#aa6925accc3b2009a45f13557bc7d8f7f">jeu</a> (SDL_Window *window, SDL_Renderer *renderer, int format, char *grille_predef, int joueur)</td></tr>
+<tr class="memdesc:aa6925accc3b2009a45f13557bc7d8f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur.  <a href="jeu_8c.html#aa6925accc3b2009a45f13557bc7d8f7f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa6925accc3b2009a45f13557bc7d8f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions réalisant la phase d'intéraction du joueur avec la grille. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>18 Avril 2021 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aa6925accc3b2009a45f13557bc7d8f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6925accc3b2009a45f13557bc7d8f7f">&#9670;&nbsp;</a></span>jeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jeu </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>grille_predef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">grille_predef</td><td>est une chaine de caractère comportant le nom de la matrice prédéfinie </td></tr>
+    <tr><td class="paramname">joueur</td><td>représente le mode de jeu choisit par le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 quand la fonction est terminée </dd></dl>
+
+</div>
+</div>
+<a id="a8706089cdfd1308f6670f51ac7ca2d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8706089cdfd1308f6670f51ac7ca2d10">&#9670;&nbsp;</a></span>jouer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jouer </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_colonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction réalise la phase d'intéraction du joueur sur la grille. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">nb_max_cond_lignes</td><td>est le nombre maximale de condition qu'une ligne du picross puisse obtenir </td></tr>
+    <tr><td class="paramname">nb_max_cond_colonnes</td><td>est le nombre maximale de condition qu'une colonne du picross puisse obtenir </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>une variable utilisée pour perpétuer la boucle d'intéraction, sa valeur sera 0 quand on arretera le jeu </dd></dl>
+
+</div>
+</div>
+<a id="aa72d59a0f7935c53d168ff81ebe5c820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72d59a0f7935c53d168ff81ebe5c820">&#9670;&nbsp;</a></span>nb_max_cond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nb_max_cond </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul le nombre maximum de conditions de la matrice. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>nb_max_cond un entier représentant le nombre maximal de condition qu'une matrice peut posséder </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

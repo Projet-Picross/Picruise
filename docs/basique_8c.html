@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier basique.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier basique.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ensemble de fonctions vérifiant la présence de cas basique dans un picross.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0240ac851181b84ac374872dc5434ee4"><td class="memItemLeft" align="right" valign="top"><a id="a0240ac851181b84ac374872dc5434ee4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>N</b>&#160;&#160;&#160;10</td></tr>
+<tr class="separator:a0240ac851181b84ac374872dc5434ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a0cfaf1c4f61a0341915c662a28fddf1d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basique_8c.html#a0cfaf1c4f61a0341915c662a28fddf1d">somme_nb_cond</a> (int mat[N][N], int i)</td></tr>
+<tr class="memdesc:a0cfaf1c4f61a0341915c662a28fddf1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compte le nombre de condition présentes dans la matrice passée en paramètre.  <a href="basique_8c.html#a0cfaf1c4f61a0341915c662a28fddf1d">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a0cfaf1c4f61a0341915c662a28fddf1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833b37a3faf46b4e004d3702e89a5ff0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basique_8c.html#a833b37a3faf46b4e004d3702e89a5ff0">cas_basique_l</a> (int mat_condition_l[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a833b37a3faf46b4e004d3702e89a5ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie la grille si les lignes sont vides/pleines.  <a href="basique_8c.html#a833b37a3faf46b4e004d3702e89a5ff0">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a833b37a3faf46b4e004d3702e89a5ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fa07c83a7ede0c664c2015088c4520"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basique_8c.html#aa9fa07c83a7ede0c664c2015088c4520">cas_basique_c</a> (int mat_condition_c[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:aa9fa07c83a7ede0c664c2015088c4520"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie la grille si les colonnes sont vides/pleines.  <a href="basique_8c.html#aa9fa07c83a7ede0c664c2015088c4520">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa9fa07c83a7ede0c664c2015088c4520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e8fdc25726172faf0708c2b722f4f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basique_8c.html#ab2e8fdc25726172faf0708c2b722f4f2">cas_mediane_l</a> (int mat_condition_l[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:ab2e8fdc25726172faf0708c2b722f4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie la grille si les lignes sont à moitié remplies.  <a href="basique_8c.html#ab2e8fdc25726172faf0708c2b722f4f2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab2e8fdc25726172faf0708c2b722f4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e84622cff7577133cdd4a2c99fd58b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="basique_8c.html#a7e84622cff7577133cdd4a2c99fd58b7">cas_mediane_c</a> (int mat_condition_c[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a7e84622cff7577133cdd4a2c99fd58b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie la grille si les colonnes sont à moitié remplies.  <a href="basique_8c.html#a7e84622cff7577133cdd4a2c99fd58b7">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a7e84622cff7577133cdd4a2c99fd58b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ensemble de fonctions vérifiant la présence de cas basique dans un picross. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>5 Mars 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="aa9fa07c83a7ede0c664c2015088c4520"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9fa07c83a7ede0c664c2015088c4520">&#9670;&nbsp;</a></span>cas_basique_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_basique_c </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condition_c</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie la grille si les colonnes sont vides/pleines. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_condition_c</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+    <tr><td class="paramname">mat_condition_c</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a833b37a3faf46b4e004d3702e89a5ff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a833b37a3faf46b4e004d3702e89a5ff0">&#9670;&nbsp;</a></span>cas_basique_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_basique_l </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condition_l</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie la grille si les lignes sont vides/pleines. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_condition_l</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+    <tr><td class="paramname">mat_condition_l</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a7e84622cff7577133cdd4a2c99fd58b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e84622cff7577133cdd4a2c99fd58b7">&#9670;&nbsp;</a></span>cas_mediane_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_mediane_c </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condition_c</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie la grille si les colonnes sont à moitié remplies. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_condition_c</td><td>est la matrice des conditions de chaque colonne du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+    <tr><td class="paramname">mat_condition_c</td><td>est la matrice des conditions de chaque colonne du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="ab2e8fdc25726172faf0708c2b722f4f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e8fdc25726172faf0708c2b722f4f2">&#9670;&nbsp;</a></span>cas_mediane_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_mediane_l </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condition_l</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie la grille si les lignes sont à moitié remplies. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_condition_l</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+    <tr><td class="paramname">mat_condition_l</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a0cfaf1c4f61a0341915c662a28fddf1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0cfaf1c4f61a0341915c662a28fddf1d">&#9670;&nbsp;</a></span>somme_nb_cond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int somme_nb_cond </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compte le nombre de condition présentes dans la matrice passée en paramètre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>est une matrice représentant les conditions à appliquer au picross </td></tr>
+    <tr><td class="paramname">i</td><td>indice de la ligne de la matrice où on veut compter le nombre de condition </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>compteur de condition de la ligne concernée </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

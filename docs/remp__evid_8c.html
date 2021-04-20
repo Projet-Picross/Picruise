@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier remp_evid.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier remp_evid.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ensemble de fonctions qui détectent des cas simples de resolution d'une grille de picross.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0240ac851181b84ac374872dc5434ee4"><td class="memItemLeft" align="right" valign="top"><a id="a0240ac851181b84ac374872dc5434ee4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>N</b>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a0240ac851181b84ac374872dc5434ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:acc7d33dc29a0d01610bd0c1ed6259c0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#acc7d33dc29a0d01610bd0c1ed6259c0b">remp_intermediaires_l</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:acc7d33dc29a0d01610bd0c1ed6259c0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes.  <a href="remp__evid_8c.html#acc7d33dc29a0d01610bd0c1ed6259c0b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acc7d33dc29a0d01610bd0c1ed6259c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b50d04e0693ea456fefad7f4298910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#a13b50d04e0693ea456fefad7f4298910">remp_intermediaires_c</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a13b50d04e0693ea456fefad7f4298910"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes.  <a href="remp__evid_8c.html#a13b50d04e0693ea456fefad7f4298910">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a13b50d04e0693ea456fefad7f4298910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4fc35d3fec14fa1894901e6d6dfdb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#a8b4fc35d3fec14fa1894901e6d6dfdb2">remp_derniere_cond_l</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a8b4fc35d3fec14fa1894901e6d6dfdb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes.  <a href="remp__evid_8c.html#a8b4fc35d3fec14fa1894901e6d6dfdb2">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8b4fc35d3fec14fa1894901e6d6dfdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b3d9c2aef757da969ea029cea939cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#a01b3d9c2aef757da969ea029cea939cc">remp_derniere_cond_c</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a01b3d9c2aef757da969ea029cea939cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires sur les colonnes.  <a href="remp__evid_8c.html#a01b3d9c2aef757da969ea029cea939cc">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a01b3d9c2aef757da969ea029cea939cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d4863b05d8f7d93f073c7c1957dc1b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#a81d4863b05d8f7d93f073c7c1957dc1b">remp_blanc_noire_l</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a81d4863b05d8f7d93f073c7c1957dc1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires selon la présence de cases blanches sur les lignes.  <a href="remp__evid_8c.html#a81d4863b05d8f7d93f073c7c1957dc1b">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a81d4863b05d8f7d93f073c7c1957dc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654bcb2402c4eac4047dffb0ad517291"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remp__evid_8c.html#a654bcb2402c4eac4047dffb0ad517291">remp_blanc_noire_c</a> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="memdesc:a654bcb2402c4eac4047dffb0ad517291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui complete le remplissage d'un bloc de cases noires selon la présence de cases blanches sur les colonnes.  <a href="remp__evid_8c.html#a654bcb2402c4eac4047dffb0ad517291">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a654bcb2402c4eac4047dffb0ad517291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ensemble de fonctions qui détectent des cas simples de resolution d'une grille de picross. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>5 Mars 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a654bcb2402c4eac4047dffb0ad517291"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654bcb2402c4eac4047dffb0ad517291">&#9670;&nbsp;</a></span>remp_blanc_noire_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_blanc_noire_c </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires selon la présence de cases blanches sur les colonnes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires. </p>
+
+</div>
+</div>
+<a id="a81d4863b05d8f7d93f073c7c1957dc1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81d4863b05d8f7d93f073c7c1957dc1b">&#9670;&nbsp;</a></span>remp_blanc_noire_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_blanc_noire_l </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires selon la présence de cases blanches sur les lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires. </p>
+
+</div>
+</div>
+<a id="a01b3d9c2aef757da969ea029cea939cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01b3d9c2aef757da969ea029cea939cc">&#9670;&nbsp;</a></span>remp_derniere_cond_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_derniere_cond_c </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires sur les colonnes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si la dernière condition se termine à l'extremite de la matrice et que l'on a une une case noircie, on remplie les cases intermédiaires. Pour les colonnes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si la dernière condition se termine à l'extremite de la matrice et que l'on a une une case noircie, on remplie les cases intermédiaires. Pour les colonnes. </p>
+
+</div>
+</div>
+<a id="a8b4fc35d3fec14fa1894901e6d6dfdb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b4fc35d3fec14fa1894901e6d6dfdb2">&#9670;&nbsp;</a></span>remp_derniere_cond_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_derniere_cond_l </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si la dernière condition se termine à l'extremite de la matrice et que l'on a une une case noircie, on remplie les cases intermédiaires. Pour les lignes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si la dernière condition se termine à l'extremite de la matrice et que l'on a une une case noircie, on remplie les cases intermédiaires. Pour les lignes. </p>
+
+</div>
+</div>
+<a id="a13b50d04e0693ea456fefad7f4298910"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13b50d04e0693ea456fefad7f4298910">&#9670;&nbsp;</a></span>remp_intermediaires_c()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_intermediaires_c </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si il n'y a qu'une seule condition et deux cases noircies non voisines l'une de l'autre, remplir les cases intermédiaires. Pour les colonnes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si il n'y a qu'une seule condition et deux cases noircies non voisines l'une de l'autre, remplir les cases intermédiaires. Pour les colonnes. </p>
+
+</div>
+</div>
+<a id="acc7d33dc29a0d01610bd0c1ed6259c0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc7d33dc29a0d01610bd0c1ed6259c0b">&#9670;&nbsp;</a></span>remp_intermediaires_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int remp_intermediaires_l </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_cond</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui complete le remplissage d'un bloc de cases noires sur les lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Si il n'y a qu'une seule condition et deux cases noircies non voisines l'une de l'autre, remplir les cases intermédiaires. Pour les lignes.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre </td></tr>
+    <tr><td class="paramname">grille</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<p>Si il n'y a qu'une seule condition et deux cases noircies non voisines l'une de l'autre, remplir les cases intermédiaires. Pour les lignes. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

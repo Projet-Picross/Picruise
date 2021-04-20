@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier generation.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier generation.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions réalisant la génération des matrices.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;../src/generation.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a3982c02d61d10308139c2879a0dcd517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generation_8c.html#a3982c02d61d10308139c2879a0dcd517">init_matrice</a> (int *matrice, int format)</td></tr>
+<tr class="memdesc:a3982c02d61d10308139c2879a0dcd517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une matrice avec des 0.  <a href="generation_8c.html#a3982c02d61d10308139c2879a0dcd517">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3982c02d61d10308139c2879a0dcd517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b187c02ab35f6903e3bee5458730d81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generation_8c.html#a4b187c02ab35f6903e3bee5458730d81">genera_aleatoire</a> (int *grille, int format)</td></tr>
+<tr class="memdesc:a4b187c02ab35f6903e3bee5458730d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie une matrice aléatoirement avec des 1 placés aléatoirement.  <a href="generation_8c.html#a4b187c02ab35f6903e3bee5458730d81">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4b187c02ab35f6903e3bee5458730d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af736234ac73ceb172e1aa40f157a245a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generation_8c.html#af736234ac73ceb172e1aa40f157a245a">affecter_matrice_predef</a> (int *matrice, int format, char *fich)</td></tr>
+<tr class="memdesc:af736234ac73ceb172e1aa40f157a245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui lit un fichier et place les cases noires dans la matrice.  <a href="generation_8c.html#af736234ac73ceb172e1aa40f157a245a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af736234ac73ceb172e1aa40f157a245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74324f1e90375344ae799b96e14bd93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generation_8c.html#a74324f1e90375344ae799b96e14bd93e">generat_condi_lignes</a> (int *matrice, int *mat_condi_lignes, int format)</td></tr>
+<tr class="memdesc:a74324f1e90375344ae799b96e14bd93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génération de la matrice des conditions des lignes.  <a href="generation_8c.html#a74324f1e90375344ae799b96e14bd93e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a74324f1e90375344ae799b96e14bd93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbc54f210706e07450948ad8c157c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="generation_8c.html#acdbc54f210706e07450948ad8c157c86">generat_condi_colonnes</a> (int *matrice, int *mat_condi_colonnes, int format)</td></tr>
+<tr class="memdesc:acdbc54f210706e07450948ad8c157c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génération de la matrice des conditions des colonnes.  <a href="generation_8c.html#acdbc54f210706e07450948ad8c157c86">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acdbc54f210706e07450948ad8c157c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions réalisant la génération des matrices. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>18 Avril 2021 </dd></dl>
+<dl class="section author"><dt>Auteur</dt><dd>Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="af736234ac73ceb172e1aa40f157a245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af736234ac73ceb172e1aa40f157a245a">&#9670;&nbsp;</a></span>affecter_matrice_predef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affecter_matrice_predef </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fich</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui lit un fichier et place les cases noires dans la matrice. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">fich</td><td>est une chaine de caractère comportant le nom de la matrice prédéfinie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4b187c02ab35f6903e3bee5458730d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b187c02ab35f6903e3bee5458730d81">&#9670;&nbsp;</a></span>genera_aleatoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int genera_aleatoire </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie une matrice aléatoirement avec des 1 placés aléatoirement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>cpt un compteur de cases noires </dd></dl>
+
+</div>
+</div>
+<a id="acdbc54f210706e07450948ad8c157c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbc54f210706e07450948ad8c157c86">&#9670;&nbsp;</a></span>generat_condi_colonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generat_condi_colonnes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_condi_colonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génération de la matrice des conditions des colonnes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_condi_colonnes</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74324f1e90375344ae799b96e14bd93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74324f1e90375344ae799b96e14bd93e">&#9670;&nbsp;</a></span>generat_condi_lignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generat_condi_lignes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_condi_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génération de la matrice des conditions des lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_condi_lignes</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3982c02d61d10308139c2879a0dcd517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3982c02d61d10308139c2879a0dcd517">&#9670;&nbsp;</a></span>init_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_matrice </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise une matrice avec des 0. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
