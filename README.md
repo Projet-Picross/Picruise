@@ -2,7 +2,8 @@ Picruise est un projet de jeu de type picross développé en C et en SDL. Celui-
 
 Le projet est déjà compilé, il suffit donc de lancer l'exécutable Picruise dans le fichier bin.
 
-Notez que le solveur est très lent pour certaines matrices.
+Notez que le solveur est très lent pour certaines matrices. Nous vons conseillons de le tester sur des matrices aléatoires 5x5 (là encore, il se peut qu'il soit très lent).
+
 De plus, changer les dimensions de la fenêtre dans les options fera crasher le bouton quittter.
 
 
