@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier remplissage_evident.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier remplissage_evident.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ensemble de fonctions qui détectent des cas simples de resolution d'une grille de picross.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0240ac851181b84ac374872dc5434ee4"><td class="memItemLeft" align="right" valign="top"><a id="a0240ac851181b84ac374872dc5434ee4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>N</b>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a0240ac851181b84ac374872dc5434ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a20ed4ce977259eb7c1d3efa9d6978f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#a20ed4ce977259eb7c1d3efa9d6978f27">copie_mat</a> (int mat_1[N][N], int mat_2[N][N])</td></tr>
+<tr class="memdesc:a20ed4ce977259eb7c1d3efa9d6978f27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copie une matrice dans l'autre.  <a href="remplissage__evident_8c.html#a20ed4ce977259eb7c1d3efa9d6978f27">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a20ed4ce977259eb7c1d3efa9d6978f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac487094faed5588296dba138568c74f2"><td class="memItemLeft" align="right" valign="top"><a id="ac487094faed5588296dba138568c74f2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>est_modifie</b> (int mat_origine[N][N], int mat_modifie[N][N])</td></tr>
+<tr class="separator:ac487094faed5588296dba138568c74f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd3772b810e0a7bbd779a899508984e3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#abd3772b810e0a7bbd779a899508984e3">nb_condi</a> (int mat[N][N], int i)</td></tr>
+<tr class="memdesc:abd3772b810e0a7bbd779a899508984e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui compte le nombre de condition d'une matrice condition.  <a href="remplissage__evident_8c.html#abd3772b810e0a7bbd779a899508984e3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abd3772b810e0a7bbd779a899508984e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd37e40adc22180a304f68b368996353"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#afd37e40adc22180a304f68b368996353">extremite_ligne</a> (int matrice[N][N], int mat_condi_ligne[N][N])</td></tr>
+<tr class="memdesc:afd37e40adc22180a304f68b368996353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplie les extremites des lignes d'une matrice.  <a href="remplissage__evident_8c.html#afd37e40adc22180a304f68b368996353">Plus de détails...</a><br /></td></tr>
+<tr class="separator:afd37e40adc22180a304f68b368996353"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29ea084aa9c202439ded39615a3179c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#aa29ea084aa9c202439ded39615a3179c">extremite_colonne</a> (int matrice[N][N], int mat_condi_colonne[N][N])</td></tr>
+<tr class="memdesc:aa29ea084aa9c202439ded39615a3179c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplie les extremites des colonnes d'une matrice.  <a href="remplissage__evident_8c.html#aa29ea084aa9c202439ded39615a3179c">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa29ea084aa9c202439ded39615a3179c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a833b37a3faf46b4e004d3702e89a5ff0"><td class="memItemLeft" align="right" valign="top"><a id="a833b37a3faf46b4e004d3702e89a5ff0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cas_basique_l</b> (int mat_condition_l[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a833b37a3faf46b4e004d3702e89a5ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9fa07c83a7ede0c664c2015088c4520"><td class="memItemLeft" align="right" valign="top"><a id="aa9fa07c83a7ede0c664c2015088c4520"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cas_basique_c</b> (int mat_condition_c[N][N], int grille[N][N])</td></tr>
+<tr class="separator:aa9fa07c83a7ede0c664c2015088c4520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e8fdc25726172faf0708c2b722f4f2"><td class="memItemLeft" align="right" valign="top"><a id="ab2e8fdc25726172faf0708c2b722f4f2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cas_mediane_l</b> (int mat_condition_l[N][N], int grille[N][N])</td></tr>
+<tr class="separator:ab2e8fdc25726172faf0708c2b722f4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e84622cff7577133cdd4a2c99fd58b7"><td class="memItemLeft" align="right" valign="top"><a id="a7e84622cff7577133cdd4a2c99fd58b7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>cas_mediane_c</b> (int mat_condition_c[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a7e84622cff7577133cdd4a2c99fd58b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdae04dafc31bf282de3a412e53f0b45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#abdae04dafc31bf282de3a412e53f0b45">cas_uniques_ligne</a> (int matrice[N][N], int mat_condi_ligne[N][N])</td></tr>
+<tr class="memdesc:abdae04dafc31bf282de3a412e53f0b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplies les lignes d'une matrice ayant une case noire sur deux.  <a href="remplissage__evident_8c.html#abdae04dafc31bf282de3a412e53f0b45">Plus de détails...</a><br /></td></tr>
+<tr class="separator:abdae04dafc31bf282de3a412e53f0b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0fdc869b5b34ec4cc1e1dadb3437b2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#ab0fdc869b5b34ec4cc1e1dadb3437b2f">cas_uniques_colonne</a> (int matrice[N][N], int mat_condi_colonne[N][N])</td></tr>
+<tr class="memdesc:ab0fdc869b5b34ec4cc1e1dadb3437b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplies les colonnes d'une matrice ayant une case noire sur deux.  <a href="remplissage__evident_8c.html#ab0fdc869b5b34ec4cc1e1dadb3437b2f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab0fdc869b5b34ec4cc1e1dadb3437b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc7d33dc29a0d01610bd0c1ed6259c0b"><td class="memItemLeft" align="right" valign="top"><a id="acc7d33dc29a0d01610bd0c1ed6259c0b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_intermediaires_l</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:acc7d33dc29a0d01610bd0c1ed6259c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13b50d04e0693ea456fefad7f4298910"><td class="memItemLeft" align="right" valign="top"><a id="a13b50d04e0693ea456fefad7f4298910"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_intermediaires_c</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a13b50d04e0693ea456fefad7f4298910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4fc35d3fec14fa1894901e6d6dfdb2"><td class="memItemLeft" align="right" valign="top"><a id="a8b4fc35d3fec14fa1894901e6d6dfdb2"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_derniere_cond_l</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a8b4fc35d3fec14fa1894901e6d6dfdb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01b3d9c2aef757da969ea029cea939cc"><td class="memItemLeft" align="right" valign="top"><a id="a01b3d9c2aef757da969ea029cea939cc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_derniere_cond_c</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a01b3d9c2aef757da969ea029cea939cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81d4863b05d8f7d93f073c7c1957dc1b"><td class="memItemLeft" align="right" valign="top"><a id="a81d4863b05d8f7d93f073c7c1957dc1b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_blanc_noire_l</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a81d4863b05d8f7d93f073c7c1957dc1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654bcb2402c4eac4047dffb0ad517291"><td class="memItemLeft" align="right" valign="top"><a id="a654bcb2402c4eac4047dffb0ad517291"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>remp_blanc_noire_c</b> (int mat_cond[N][N], int grille[N][N])</td></tr>
+<tr class="separator:a654bcb2402c4eac4047dffb0ad517291"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0819d08f3aef38187b769684b16edfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="remplissage__evident_8c.html#ab0819d08f3aef38187b769684b16edfe">remplissage_evident</a> (int matrice[N][N], int mat_condi_ligne[N][N], int mat_condi_colonne[N][N])</td></tr>
+<tr class="memdesc:ab0819d08f3aef38187b769684b16edfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction appelle toute les fonctions de remplissages récursivement.  <a href="remplissage__evident_8c.html#ab0819d08f3aef38187b769684b16edfe">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ab0819d08f3aef38187b769684b16edfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ensemble de fonctions qui détectent des cas simples de resolution d'une grille de picross. </p>
+<dl class="section version"><dt>Version</dt><dd>1.2 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>12 Mars 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab0fdc869b5b34ec4cc1e1dadb3437b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0fdc869b5b34ec4cc1e1dadb3437b2f">&#9670;&nbsp;</a></span>cas_uniques_colonne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_uniques_colonne </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_colonne</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplies les colonnes d'une matrice ayant une case noire sur deux. </p>
+<p>Fonction qui remplie les colonnes d'une matrice.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_colonne</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifié, 0 sinon</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_colonne</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abdae04dafc31bf282de3a412e53f0b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdae04dafc31bf282de3a412e53f0b45">&#9670;&nbsp;</a></span>cas_uniques_ligne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cas_uniques_ligne </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_ligne</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplies les lignes d'une matrice ayant une case noire sur deux. </p>
+<p>Fonction qui remplie les lignes d'une matrice.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_ligne</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifié, 0 sinon</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_ligne</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a20ed4ce977259eb7c1d3efa9d6978f27"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20ed4ce977259eb7c1d3efa9d6978f27">&#9670;&nbsp;</a></span>copie_mat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void copie_mat </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_1</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_2</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copie une matrice dans l'autre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_1</td><td>est une matrice qui contiendra des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_2</td><td>une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) qui sera copiée dans la première matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa29ea084aa9c202439ded39615a3179c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29ea084aa9c202439ded39615a3179c">&#9670;&nbsp;</a></span>extremite_colonne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int extremite_colonne </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_colonne</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplie les extremites des colonnes d'une matrice. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_colonne</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_colonne</td><td>est la matrice des conditions de chaque colonnes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afd37e40adc22180a304f68b368996353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd37e40adc22180a304f68b368996353">&#9670;&nbsp;</a></span>extremite_ligne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int extremite_ligne </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_ligne</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplie les extremites des lignes d'une matrice. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_ligne</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la matrice à été modifiée, 0 sinon</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_ligne</td><td>est la matrice des conditions de chaque lignes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="abd3772b810e0a7bbd779a899508984e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd3772b810e0a7bbd779a899508984e3">&#9670;&nbsp;</a></span>nb_condi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nb_condi </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui compte le nombre de condition d'une matrice condition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>est une matrice contenant les conditions à appliquer sur la futur matrice du joueur </td></tr>
+    <tr><td class="paramname">i</td><td>est ligne de la matrice où l'on souhaite compter les conditions </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le nombre de conditions</dd></dl>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>est une matrice qui les conditions à appliquer sur le picross </td></tr>
+    <tr><td class="paramname">i</td><td>est l'indice de la ligne dont on souhaite connaitre le nombre de condition </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>le nombre de condition de la matrice présentes sur la ligne d'indice i </dd></dl>
+
+</div>
+</div>
+<a id="ab0819d08f3aef38187b769684b16edfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0819d08f3aef38187b769684b16edfe">&#9670;&nbsp;</a></span>remplissage_evident()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remplissage_evident </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_ligne</em>[N][N], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mat_condi_colonne</em>[N][N]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction appelle toute les fonctions de remplissages récursivement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche) </td></tr>
+    <tr><td class="paramname">mat_condi_ligne</td><td>est une matrice contenant les conditions de chaque lignes du picross </td></tr>
+    <tr><td class="paramname">mat_condi_colonne</td><td>est une matrice contenant les conditions de chaque colonnes du picross </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

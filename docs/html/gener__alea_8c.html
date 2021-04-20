@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier gener_alea.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier gener_alea.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ensemble de fonctions générant aléatoirement des conditions de picross.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a0240ac851181b84ac374872dc5434ee4"><td class="memItemLeft" align="right" valign="top"><a id="a0240ac851181b84ac374872dc5434ee4"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>N</b>&#160;&#160;&#160;30</td></tr>
+<tr class="separator:a0240ac851181b84ac374872dc5434ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:a059f1b1774a40de1a3c5289ea57b49b9"><td class="memItemLeft" align="right" valign="top"><a id="a059f1b1774a40de1a3c5289ea57b49b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>init_matrice</b> (int matrice[N][N])</td></tr>
+<tr class="separator:a059f1b1774a40de1a3c5289ea57b49b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a048a1db04e01ad9b41208c255288f676"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gener__alea_8c.html#a048a1db04e01ad9b41208c255288f676">affiche_matrice</a> (int matrice[N][N])</td></tr>
+<tr class="memdesc:a048a1db04e01ad9b41208c255288f676"><td class="mdescLeft">&#160;</td><td class="mdescRight">Affichage d'une matrice de picross avec des X et des .  <a href="gener__alea_8c.html#a048a1db04e01ad9b41208c255288f676">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a048a1db04e01ad9b41208c255288f676"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6851be93840a22834ef3d529030b5c69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gener__alea_8c.html#a6851be93840a22834ef3d529030b5c69">genera_aleatoire</a> (int grille[N][N])</td></tr>
+<tr class="memdesc:a6851be93840a22834ef3d529030b5c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie une matrice aléatoirement avec des 0 et des 1.  <a href="gener__alea_8c.html#a6851be93840a22834ef3d529030b5c69">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a6851be93840a22834ef3d529030b5c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7661eaee99a1cd483080915a01f79fad"><td class="memItemLeft" align="right" valign="top"><a id="a7661eaee99a1cd483080915a01f79fad"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>valid_mat</b> (int grille[N][N], int cpt)</td></tr>
+<tr class="separator:a7661eaee99a1cd483080915a01f79fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top"><a id="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> ()</td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Ensemble de fonctions générant aléatoirement des conditions de picross. </p>
+<dl class="section version"><dt>Version</dt><dd>1.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>23 Février 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a048a1db04e01ad9b41208c255288f676"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a048a1db04e01ad9b41208c255288f676">&#9670;&nbsp;</a></span>affiche_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affiche_matrice </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>matrice</em>[N][N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Affichage d'une matrice de picross avec des X et des . </p>
+<p>Affiche la matrice passée en paramètre avec des "X" et "."".</p>
+<p>Affiche la matrice passée en paramètre.</p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est une matrice contenant des 0 ou des 1 (1 = case noire | 0 = case blanche)</td></tr>
+    <tr><td class="paramname">matrice</td><td>est la matrice à afficher</td></tr>
+    <tr><td class="paramname">matrice</td><td>est la matrice à initialiser </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6851be93840a22834ef3d529030b5c69"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6851be93840a22834ef3d529030b5c69">&#9670;&nbsp;</a></span>genera_aleatoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int genera_aleatoire </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>grille</em>[N][N]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie une matrice aléatoirement avec des 0 et des 1. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est la matrice à remplir avec les valeurs générées </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>cpt un compteur de cases noires </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

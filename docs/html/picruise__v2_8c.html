@@ -1,0 +1,1164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Picross: Référence du fichier picruise_v2.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Picross
+   </div>
+   <div id="projectbrief">Document présentant notre projet : la création d&#39;un jeu de Picross</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle">
+<div class="title">Référence du fichier picruise_v2.c</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Programme permettant à l'utilisateur de jouer à Picruise.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SDL.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;math.h&gt;</code><br />
+<code>#include &lt;time.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;SDL_ttf.h&gt;</code><br />
+<code>#include &lt;SDL_image.h&gt;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ad0121e0ade39fd4d3e67c9da0911e0fc"><td class="memItemLeft" align="right" valign="top"><a id="ad0121e0ade39fd4d3e67c9da0911e0fc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>choix_type_grille</b> (SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="separator:ad0121e0ade39fd4d3e67c9da0911e0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45a861a2f40094bb8a20e4549ff96d52"><td class="memItemLeft" align="right" valign="top"><a id="a45a861a2f40094bb8a20e4549ff96d52"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>accueil</b> (SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="separator:a45a861a2f40094bb8a20e4549ff96d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a079ee38c9d4fc022faac843e82b7e2ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a079ee38c9d4fc022faac843e82b7e2ef">choix_jeu</a> (SDL_Window *window, SDL_Renderer *renderer, int format, char *grille_predef)</td></tr>
+<tr class="memdesc:a079ee38c9d4fc022faac843e82b7e2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui réalise la page de sélection du mode joueur ou solveur.  <a href="picruise__v2_8c.html#a079ee38c9d4fc022faac843e82b7e2ef">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a079ee38c9d4fc022faac843e82b7e2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d27f81bae288f9c4e582edb31c86903"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a8d27f81bae288f9c4e582edb31c86903">affiche_jeu</a> (SDL_Window *window, SDL_Renderer *renderer, SDL_Rect *r, int *grille, int *mat_cond_l, int *mat_cond_c, int format, int nb_max_cond_lignes, int nb_max_cond_colonnes)</td></tr>
+<tr class="memdesc:a8d27f81bae288f9c4e582edb31c86903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui produit le rendu final du jeu Picruise.  <a href="picruise__v2_8c.html#a8d27f81bae288f9c4e582edb31c86903">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a8d27f81bae288f9c4e582edb31c86903"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3982c02d61d10308139c2879a0dcd517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a3982c02d61d10308139c2879a0dcd517">init_matrice</a> (int *matrice, int format)</td></tr>
+<tr class="memdesc:a3982c02d61d10308139c2879a0dcd517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise une matrice avec des 0.  <a href="picruise__v2_8c.html#a3982c02d61d10308139c2879a0dcd517">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3982c02d61d10308139c2879a0dcd517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ddcf3a82c5e5fb21abf60f24f7d8c1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a01ddcf3a82c5e5fb21abf60f24f7d8c1">verif_lignes</a> (int *mat_cond, int *grille, int format)</td></tr>
+<tr class="memdesc:a01ddcf3a82c5e5fb21abf60f24f7d8c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie les lignes de la matrice condition.  <a href="picruise__v2_8c.html#a01ddcf3a82c5e5fb21abf60f24f7d8c1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a01ddcf3a82c5e5fb21abf60f24f7d8c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a471e768307d5575087eebaade7040d31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a471e768307d5575087eebaade7040d31">verif_colonnes</a> (int *mat_cond, int *grille, int format)</td></tr>
+<tr class="memdesc:a471e768307d5575087eebaade7040d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Verifie les colonnes de la matrice condition.  <a href="picruise__v2_8c.html#a471e768307d5575087eebaade7040d31">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a471e768307d5575087eebaade7040d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b187c02ab35f6903e3bee5458730d81"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a4b187c02ab35f6903e3bee5458730d81">genera_aleatoire</a> (int *grille, int format)</td></tr>
+<tr class="memdesc:a4b187c02ab35f6903e3bee5458730d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie une matrice aléatoirement avec des 0 et des 1.  <a href="picruise__v2_8c.html#a4b187c02ab35f6903e3bee5458730d81">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4b187c02ab35f6903e3bee5458730d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af736234ac73ceb172e1aa40f157a245a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#af736234ac73ceb172e1aa40f157a245a">affecter_matrice_predef</a> (int *matrice, int format, char *fich)</td></tr>
+<tr class="memdesc:af736234ac73ceb172e1aa40f157a245a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier.  <a href="picruise__v2_8c.html#af736234ac73ceb172e1aa40f157a245a">Plus de détails...</a><br /></td></tr>
+<tr class="separator:af736234ac73ceb172e1aa40f157a245a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74324f1e90375344ae799b96e14bd93e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a74324f1e90375344ae799b96e14bd93e">generat_condi_lignes</a> (int *matrice, int *mat_condi_lignes, int format)</td></tr>
+<tr class="memdesc:a74324f1e90375344ae799b96e14bd93e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génération de la matrice des conditions des lignes.  <a href="picruise__v2_8c.html#a74324f1e90375344ae799b96e14bd93e">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a74324f1e90375344ae799b96e14bd93e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdbc54f210706e07450948ad8c157c86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#acdbc54f210706e07450948ad8c157c86">generat_condi_colonnes</a> (int *matrice, int *mat_condi_colonnes, int format)</td></tr>
+<tr class="memdesc:acdbc54f210706e07450948ad8c157c86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génération de la matrice des conditions des colonnes.  <a href="picruise__v2_8c.html#acdbc54f210706e07450948ad8c157c86">Plus de détails...</a><br /></td></tr>
+<tr class="separator:acdbc54f210706e07450948ad8c157c86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4567a89fb4eeb292041acacba9959639"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a4567a89fb4eeb292041acacba9959639">somme_cond_l</a> (int *mat_cond, int *somme_cond, int format)</td></tr>
+<tr class="memdesc:a4567a89fb4eeb292041acacba9959639"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remplie un tableau avec la somme de chaque lignes de la matrice condition.  <a href="picruise__v2_8c.html#a4567a89fb4eeb292041acacba9959639">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a4567a89fb4eeb292041acacba9959639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aace37d6c86dcf9971353c8a8c877d346"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#aace37d6c86dcf9971353c8a8c877d346">remplissage_inter</a> (int *mat, int *mat2, int format)</td></tr>
+<tr class="memdesc:aace37d6c86dcf9971353c8a8c877d346"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copie la première matrice dans la deuxième et complète les vides avec des 0.  <a href="picruise__v2_8c.html#aace37d6c86dcf9971353c8a8c877d346">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aace37d6c86dcf9971353c8a8c877d346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ec9e1565622ea0bc2e125dc125fbfb1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a5ec9e1565622ea0bc2e125dc125fbfb1">nombre_bloc</a> (int *condi_ligne, int ligne, int format)</td></tr>
+<tr class="memdesc:a5ec9e1565622ea0bc2e125dc125fbfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition.  <a href="picruise__v2_8c.html#a5ec9e1565622ea0bc2e125dc125fbfb1">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a5ec9e1565622ea0bc2e125dc125fbfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64866b5b6811b41dbcfac3f235fb1fd3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a64866b5b6811b41dbcfac3f235fb1fd3">solve</a> (int *grille, int *mat_cond_l, int *mat_cond_c, int *combinaisons, int format)</td></tr>
+<tr class="memdesc:a64866b5b6811b41dbcfac3f235fb1fd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Génère des solutions possibles pour la résolution du picross.  <a href="picruise__v2_8c.html#a64866b5b6811b41dbcfac3f235fb1fd3">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a64866b5b6811b41dbcfac3f235fb1fd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03d536d5d6f444dcbc6d9ae90d4b9ec6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a03d536d5d6f444dcbc6d9ae90d4b9ec6">resoudre_grille</a> (int *grille, int *mat_cond_l, int *mat_cond_c, int *combinaisons, int i, int format)</td></tr>
+<tr class="memdesc:a03d536d5d6f444dcbc6d9ae90d4b9ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-ci afin de trouver la combinaison gagnante.  <a href="picruise__v2_8c.html#a03d536d5d6f444dcbc6d9ae90d4b9ec6">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a03d536d5d6f444dcbc6d9ae90d4b9ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a650345561d9bf76dfb29f37d626251c6"><td class="memItemLeft" align="right" valign="top"><a id="a650345561d9bf76dfb29f37d626251c6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>init_mat_cub</b> (int *combinaisons, int format)</td></tr>
+<tr class="separator:a650345561d9bf76dfb29f37d626251c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada92a6620a64b7ff7594eace9baa1410"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#ada92a6620a64b7ff7594eace9baa1410">solveur</a> (int *grille, int *<a class="el" href="picruise__v2_8c.html#aa6925accc3b2009a45f13557bc7d8f7f">jeu</a>, int *mat_cond_l, int *mat_cond_c, int format)</td></tr>
+<tr class="memdesc:ada92a6620a64b7ff7594eace9baa1410"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions.  <a href="picruise__v2_8c.html#ada92a6620a64b7ff7594eace9baa1410">Plus de détails...</a><br /></td></tr>
+<tr class="separator:ada92a6620a64b7ff7594eace9baa1410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2db4123c03ab72cb840c74fe18032568"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a2db4123c03ab72cb840c74fe18032568">pause</a> (SDL_Window *window, SDL_Renderer *renderer, SDL_Rect *r, int *grille, int *mat_cond_l, int *mat_cond_c, int nb_max_cond_lignes, int nb_max_cond_colonnes, int format)</td></tr>
+<tr class="memdesc:a2db4123c03ab72cb840c74fe18032568"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction réalise la phase d'intéraction du joueur sur le jeu Picruise.  <a href="picruise__v2_8c.html#a2db4123c03ab72cb840c74fe18032568">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a2db4123c03ab72cb840c74fe18032568"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa72d59a0f7935c53d168ff81ebe5c820"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#aa72d59a0f7935c53d168ff81ebe5c820">nb_max_cond</a> (int *mat_cond, int format)</td></tr>
+<tr class="memdesc:aa72d59a0f7935c53d168ff81ebe5c820"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcul le nombre maximum de conditions de la matrice.  <a href="picruise__v2_8c.html#aa72d59a0f7935c53d168ff81ebe5c820">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa72d59a0f7935c53d168ff81ebe5c820"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6925accc3b2009a45f13557bc7d8f7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#aa6925accc3b2009a45f13557bc7d8f7f">jeu</a> (SDL_Window *window, SDL_Renderer *renderer, int format, char *grille_predef, int joueur)</td></tr>
+<tr class="memdesc:aa6925accc3b2009a45f13557bc7d8f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur.  <a href="picruise__v2_8c.html#aa6925accc3b2009a45f13557bc7d8f7f">Plus de détails...</a><br /></td></tr>
+<tr class="separator:aa6925accc3b2009a45f13557bc7d8f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459c053195a9f162666a5d5b83f78c1e"><td class="memItemLeft" align="right" valign="top"><a id="a459c053195a9f162666a5d5b83f78c1e"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>choix_format</b> (SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="separator:a459c053195a9f162666a5d5b83f78c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49300b31544e6d6a9af7fbe325e346c"><td class="memItemLeft" align="right" valign="top"><a id="aa49300b31544e6d6a9af7fbe325e346c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>predefinie</b> (SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="separator:aa49300b31544e6d6a9af7fbe325e346c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4f8a50464bac13fba710d3dc4c5426"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a3b4f8a50464bac13fba710d3dc4c5426">options</a> (SDL_Window *window, SDL_Renderer *renderer)</td></tr>
+<tr class="memdesc:a3b4f8a50464bac13fba710d3dc4c5426"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui permet à l'utilisateur de choisir les dimensions de l'ecran de jeu.  <a href="picruise__v2_8c.html#a3b4f8a50464bac13fba710d3dc4c5426">Plus de détails...</a><br /></td></tr>
+<tr class="separator:a3b4f8a50464bac13fba710d3dc4c5426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top"><a id="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a599adbe412c60e0cc5abb86be7ee4507"><td class="memItemLeft" align="right" valign="top"><a id="a599adbe412c60e0cc5abb86be7ee4507"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#a599adbe412c60e0cc5abb86be7ee4507">SCREEN_WIDTH</a> = 1366</td></tr>
+<tr class="memdesc:a599adbe412c60e0cc5abb86be7ee4507"><td class="mdescLeft">&#160;</td><td class="mdescRight">int SCREEN_WIDTH est une constante correspondant à la largeur de la fenêtre en pixel int SCREEN_HEIGHT est une constante correspondant à la hauteur de la fenêtre en pixel <br /></td></tr>
+<tr class="separator:a599adbe412c60e0cc5abb86be7ee4507"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1c710caf1e3a9e81829078054e83799"><td class="memItemLeft" align="right" valign="top"><a id="af1c710caf1e3a9e81829078054e83799"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>SCREEN_HEIGHT</b> = 768</td></tr>
+<tr class="separator:af1c710caf1e3a9e81829078054e83799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4d434a8b93410ea0ed660e48dac41c6"><td class="memItemLeft" align="right" valign="top"><a id="aa4d434a8b93410ea0ed660e48dac41c6"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="picruise__v2_8c.html#aa4d434a8b93410ea0ed660e48dac41c6">screen_width</a> = 1366</td></tr>
+<tr class="memdesc:aa4d434a8b93410ea0ed660e48dac41c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variables de dimensions de l'écran int screen_width est une constante correspondant à la largeur de la fenêtre en pixel int screen_height est une constante correspondant à la hauteur de la fenêtre en pixel. <br /></td></tr>
+<tr class="separator:aa4d434a8b93410ea0ed660e48dac41c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b4a1bd850991355b91c7bfc15247d49"><td class="memItemLeft" align="right" valign="top"><a id="a3b4a1bd850991355b91c7bfc15247d49"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>screen_height</b> = 768</td></tr>
+<tr class="separator:a3b4a1bd850991355b91c7bfc15247d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Programme permettant à l'utilisateur de jouer à Picruise. </p>
+<dl class="section version"><dt>Version</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>14 Avril 2021 </dd></dl>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="af736234ac73ceb172e1aa40f157a245a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af736234ac73ceb172e1aa40f157a245a">&#9670;&nbsp;</a></span>affecter_matrice_predef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affecter_matrice_predef </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>fich</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">fich</td><td>est une chaine de caractère comportant le nom de la matrice prédéfinie </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8d27f81bae288f9c4e582edb31c86903"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d27f81bae288f9c4e582edb31c86903">&#9670;&nbsp;</a></span>affiche_jeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void affiche_jeu </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_colonnes</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui produit le rendu final du jeu Picruise. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">r</td><td>représente un ensemble de cases, formant une grille, avec lesquelles le joueur peut intéragir </td></tr>
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">nb_max_cond_lignes</td><td>est le nombre maximale de condition qu'une ligne du picross puisse obtenir </td></tr>
+    <tr><td class="paramname">nb_max_cond_colonnes</td><td>est le nombre maximale de condition qu'une colonne du picross puisse obtenir </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>une variable utilisée pour perpétuer la boucle d'intéraction, sa valeur sera 0 quand on arretera le jeu </dd></dl>
+
+</div>
+</div>
+<a id="a079ee38c9d4fc022faac843e82b7e2ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a079ee38c9d4fc022faac843e82b7e2ef">&#9670;&nbsp;</a></span>choix_jeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int choix_jeu </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>grille_predef</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui réalise la page de sélection du mode joueur ou solveur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">grille_predef</td><td>est une chaine de caractère comportant le nom de la matrice prédéfinie </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 quand la fonction est terminée </dd></dl>
+
+</div>
+</div>
+<a id="a4b187c02ab35f6903e3bee5458730d81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b187c02ab35f6903e3bee5458730d81">&#9670;&nbsp;</a></span>genera_aleatoire()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int genera_aleatoire </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie une matrice aléatoirement avec des 0 et des 1. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>cpt un compteur de cases noires </dd></dl>
+
+</div>
+</div>
+<a id="acdbc54f210706e07450948ad8c157c86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdbc54f210706e07450948ad8c157c86">&#9670;&nbsp;</a></span>generat_condi_colonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generat_condi_colonnes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_condi_colonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génération de la matrice des conditions des colonnes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_condi_colonnes</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a74324f1e90375344ae799b96e14bd93e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74324f1e90375344ae799b96e14bd93e">&#9670;&nbsp;</a></span>generat_condi_lignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void generat_condi_lignes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_condi_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génération de la matrice des conditions des lignes. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_condi_lignes</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3982c02d61d10308139c2879a0dcd517"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3982c02d61d10308139c2879a0dcd517">&#9670;&nbsp;</a></span>init_matrice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void init_matrice </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>matrice</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise une matrice avec des 0. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">matrice</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aa6925accc3b2009a45f13557bc7d8f7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6925accc3b2009a45f13557bc7d8f7f">&#9670;&nbsp;</a></span>jeu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int jeu </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>grille_predef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>joueur</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+    <tr><td class="paramname">grille_predef</td><td>est une chaine de caractère comportant le nom de la matrice prédéfinie </td></tr>
+    <tr><td class="paramname">joueur</td><td>représente le mode de jeu choisit par le joueur </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 quand la fonction est terminée </dd></dl>
+
+</div>
+</div>
+<a id="aa72d59a0f7935c53d168ff81ebe5c820"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72d59a0f7935c53d168ff81ebe5c820">&#9670;&nbsp;</a></span>nb_max_cond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nb_max_cond </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcul le nombre maximum de conditions de la matrice. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>nb_max_cond un entier représentant le nombre maximal de condition qu'une matrice peut posséder </dd></dl>
+
+</div>
+</div>
+<a id="a5ec9e1565622ea0bc2e125dc125fbfb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ec9e1565622ea0bc2e125dc125fbfb1">&#9670;&nbsp;</a></span>nombre_bloc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nombre_bloc </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>condi_ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ligne</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">condi_ligne</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">ligne</td><td>est un indice indiquant la ligne à utiliser </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>un entier représentant le nombre de bloc sur la ligne concernée </dd></dl>
+
+</div>
+</div>
+<a id="a3b4f8a50464bac13fba710d3dc4c5426"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b4f8a50464bac13fba710d3dc4c5426">&#9670;&nbsp;</a></span>options()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int options </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui permet à l'utilisateur de choisir les dimensions de l'ecran de jeu. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 quand la fonction est terminée </dd></dl>
+
+</div>
+</div>
+<a id="a2db4123c03ab72cb840c74fe18032568"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2db4123c03ab72cb840c74fe18032568">&#9670;&nbsp;</a></span>pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int pause </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Window *&#160;</td>
+          <td class="paramname"><em>window</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect *&#160;</td>
+          <td class="paramname"><em>r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_lignes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_max_cond_colonnes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction réalise la phase d'intéraction du joueur sur le jeu Picruise. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">window</td><td>est une fenêtre générée avec SDL dans laquelle se déroulera l'affichage du jeu Picruise </td></tr>
+    <tr><td class="paramname">renderer</td><td>est le moteur de rendu de la fenêtre, l'espace où nous allons pouvoir faire notre affichage </td></tr>
+    <tr><td class="paramname">r</td><td>représente un ensemble de cases, formant une grille, avec lesquelles le joueur peut intéragir </td></tr>
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">nb_max_cond_lignes</td><td>est le nombre maximale de condition qu'une ligne du picross puisse obtenir </td></tr>
+    <tr><td class="paramname">nb_max_cond_colonnes</td><td>est le nombre maximale de condition qu'une colonne du picross puisse obtenir </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>une variable utilisée pour perpétuer la boucle d'intéraction, sa valeur sera 0 quand on arretera le jeu </dd></dl>
+
+</div>
+</div>
+<a id="aace37d6c86dcf9971353c8a8c877d346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aace37d6c86dcf9971353c8a8c877d346">&#9670;&nbsp;</a></span>remplissage_inter()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void remplissage_inter </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copie la première matrice dans la deuxième et complète les vides avec des 0. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">mat2</td><td>est un pointeur d'entier et sera la copie de mat mais pointant sur des 0 quand il y a des vides (elle complete mat) </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a03d536d5d6f444dcbc6d9ae90d4b9ec6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03d536d5d6f444dcbc6d9ae90d4b9ec6">&#9670;&nbsp;</a></span>resoudre_grille()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int resoudre_grille </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>combinaisons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-ci afin de trouver la combinaison gagnante. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">combinaisons</td><td>est un pointeur d'entier qui pointe sur les cases de la matrice cubique </td></tr>
+    <tr><td class="paramname">i</td><td>est un entier indique la ligne de la matrice à traiter </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a64866b5b6811b41dbcfac3f235fb1fd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64866b5b6811b41dbcfac3f235fb1fd3">&#9670;&nbsp;</a></span>solve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int solve </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>combinaisons</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Génère des solutions possibles pour la résolution du picross. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">combinaisons</td><td>est un pointeur d'entier qui pointe sur les cases de la matrice cubique </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 quand la fonction est terminée </dd></dl>
+
+</div>
+</div>
+<a id="ada92a6620a64b7ff7594eace9baa1410"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada92a6620a64b7ff7594eace9baa1410">&#9670;&nbsp;</a></span>solveur()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int solveur </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>jeu</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_l</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">jeu</td><td>est un pointeur d'entier qui pointe sur les cases d'une grille dont on effectuera des modifications </td></tr>
+    <tr><td class="paramname">mat_cond_l</td><td>est un pointeur d'entier qui pointe sur les conditions des lignes du picross </td></tr>
+    <tr><td class="paramname">mat_cond_c</td><td>est un pointeur d'entier qui pointe sur les conditions des colonnes du picross </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la grille est résolue, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a4567a89fb4eeb292041acacba9959639"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4567a89fb4eeb292041acacba9959639">&#9670;&nbsp;</a></span>somme_cond_l()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void somme_cond_l </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>somme_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remplie un tableau avec la somme de chaque lignes de la matrice condition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">somme_cond</td><td>est un pointeur d'entier qui pointe sur les sommes des conditions des lignes </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a471e768307d5575087eebaade7040d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a471e768307d5575087eebaade7040d31">&#9670;&nbsp;</a></span>verif_colonnes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int verif_colonnes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie les colonnes de la matrice condition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la grille est correct, 0 sinon </dd></dl>
+
+</div>
+</div>
+<a id="a01ddcf3a82c5e5fb21abf60f24f7d8c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ddcf3a82c5e5fb21abf60f24f7d8c1">&#9670;&nbsp;</a></span>verif_lignes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int verif_lignes </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>mat_cond</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>grille</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>format</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Verifie les lignes de la matrice condition. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mat_cond</td><td>est un pointeur d'entier qui pointe sur les conditions du picross </td></tr>
+    <tr><td class="paramname">grille</td><td>est un pointeur d'entier qui pointe sur les cases de la grille du joueur </td></tr>
+    <tr><td class="paramname">format</td><td>représente la taille de la matrice </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>1 si la grille est correct, 0 sinon </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
