@@ -1,0 +1,69 @@
+\hypertarget{affichage_8c}{}\doxysection{Référence du fichier affichage.\+c}
+\label{affichage_8c}\index{affichage.c@{affichage.c}}
+
+
+Fonction produisant le rendu du jeu Picruise.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/affichage.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{affichage_8c_a8d27f81bae288f9c4e582edb31c86903}{affiche\+\_\+jeu}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Rect $\ast$r, int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int format, int nb\+\_\+max\+\_\+cond\+\_\+lignes, int nb\+\_\+max\+\_\+cond\+\_\+colonnes)
+\begin{DoxyCompactList}\small\item\em Fonction qui produit le rendu final du jeu Picruise. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonction produisant le rendu du jeu Picruise. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{affichage_8c_a8d27f81bae288f9c4e582edb31c86903}\label{affichage_8c_a8d27f81bae288f9c4e582edb31c86903}} 
+\index{affichage.c@{affichage.c}!affiche\_jeu@{affiche\_jeu}}
+\index{affiche\_jeu@{affiche\_jeu}!affichage.c@{affichage.c}}
+\doxysubsubsection{\texorpdfstring{affiche\_jeu()}{affiche\_jeu()}}
+{\footnotesize\ttfamily void affiche\+\_\+jeu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Rect $\ast$}]{r,  }\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{format,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+lignes,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+colonnes }\end{DoxyParamCaption})}
+
+
+
+Fonction qui produit le rendu final du jeu Picruise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em r} & représente un ensemble de cases, formant une grille, avec lesquelles le joueur peut intéragir \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+lignes} & est le nombre maximale de condition qu\textquotesingle{}une ligne du picross puisse obtenir \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+colonnes} & est le nombre maximale de condition qu\textquotesingle{}une colonne du picross puisse obtenir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+une variable utilisée pour perpétuer la boucle d\textquotesingle{}intéraction, sa valeur sera 0 quand on arretera le jeu 
+\end{DoxyReturn}

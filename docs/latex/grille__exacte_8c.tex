@@ -1,0 +1,229 @@
+\hypertarget{grille__exacte_8c}{}\doxysection{Référence du fichier grille\+\_\+exacte.\+c}
+\label{grille__exacte_8c}\index{grille\_exacte.c@{grille\_exacte.c}}
+
+
+Ensemble de fonctions servant à l\textquotesingle{}affichage et la génération d\textquotesingle{}une matrice par solveur.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_a0240ac851181b84ac374872dc5434ee4}\label{grille__exacte_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_a048a1db04e01ad9b41208c255288f676}\label{grille__exacte_8c_a048a1db04e01ad9b41208c255288f676}} 
+void {\bfseries affiche\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_a059f1b1774a40de1a3c5289ea57b49b9}\label{grille__exacte_8c_a059f1b1774a40de1a3c5289ea57b49b9}} 
+void {\bfseries init\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_a5a81c22e56cfad717533083f5ec947d8}\label{grille__exacte_8c_a5a81c22e56cfad717533083f5ec947d8}} 
+void {\bfseries generat\+\_\+condi\+\_\+lignes} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+lignes\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_af43b8d7728c14ab0a0241fac536b7ed9}\label{grille__exacte_8c_af43b8d7728c14ab0a0241fac536b7ed9}} 
+void {\bfseries generat\+\_\+condi\+\_\+colonnes} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+colonnes\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{grille__exacte_8c_a6851be93840a22834ef3d529030b5c69}\label{grille__exacte_8c_a6851be93840a22834ef3d529030b5c69}} 
+int {\bfseries genera\+\_\+aleatoire} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+void \mbox{\hyperlink{grille__exacte_8c_a60a0052d2a31d07097f3142bb6fb2534}{somme\+\_\+cond\+\_\+l}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int somme\+\_\+cond\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie un tableau avec la somme de chaque lignes de la matrice condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grille__exacte_8c_a8646d24d81ac09e9db4d8797942c1f96}{remplissage\+\_\+inter}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat2\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Copie la première matrice dans la deuxième et complète les vides avec des 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__exacte_8c_a0b681f2f5d01d094adb99ea8298b462a}{nombre\+\_\+bloc}} (int condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int ligne)
+\begin{DoxyCompactList}\small\item\em Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grille__exacte_8c_aa5802d549b05416236bdbf4e9677eb5f}{init\+\_\+mat\+\_\+cub}} (int combinaisons\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]})
+\begin{DoxyCompactList}\small\item\em Initialise la matrice cubique passée en paramètre avec des -\/1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__exacte_8c_a2ac6e0ca092aad5a474274fbe23a91e1}{verif\+\_\+lignes}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifie les lignes de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__exacte_8c_ae8654ff03a800b1ce4af037e3bff8ea6}{verif\+\_\+colonnes}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Verifie les colonnes de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__exacte_8c_a17e3bac3f219bbad726d6d64d0655865}{grille\+\_\+exacte}} (int mat\+\_\+cond\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int combi\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Génère des grilles possibles pour la résolution du picross à partir des solutions générées par la fonction solve. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__exacte_8c_a2dfb216c910df7260bae9a621875f65f}{solve}} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int combinaisons\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]})
+\begin{DoxyCompactList}\small\item\em Génère des solutions possibles pour la résolution du picross. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{grille__exacte_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{grille__exacte_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions servant à l\textquotesingle{}affichage et la génération d\textquotesingle{}une matrice par solveur. 
+
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{grille__exacte_8c_a17e3bac3f219bbad726d6d64d0655865}\label{grille__exacte_8c_a17e3bac3f219bbad726d6d64d0655865}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!grille\_exacte@{grille\_exacte}}
+\index{grille\_exacte@{grille\_exacte}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{grille\_exacte()}{grille\_exacte()}}
+{\footnotesize\ttfamily int grille\+\_\+exacte (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\+\_\+l\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+cond\+\_\+c\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{combi\mbox{[}\+N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Génère des grilles possibles pour la résolution du picross à partir des solutions générées par la fonction solve. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond\+\_\+l} & est la matrice contenant les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est la matrice contenant les conditions des colonnes du picross \\
+\hline
+{\em combi} & est la matrice cubique contenant les solutions générées par la fonction solve \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 quand la fonction est terminée
+\end{DoxyReturn}
+on teste les combinaisons en rassemblant une ligne de chaque matrices ~\newline
+ ex\+: 0 0 0 0 2 0 0 1 0 1 ~\newline
+ signifie que l\textquotesingle{}on prend les lignes d\textquotesingle{}indice 0 pour les matrices en positions 0,1,2,3,5,6,8 on prend aussi la lignes d\textquotesingle{}indice 2 de la matrice en position 4 ~\newline
+ on prend aussi les lignes d\textquotesingle{}indices 1 des matrices en position 7,9 ~\newline
+ \mbox{\Hypertarget{grille__exacte_8c_aa5802d549b05416236bdbf4e9677eb5f}\label{grille__exacte_8c_aa5802d549b05416236bdbf4e9677eb5f}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!init\_mat\_cub@{init\_mat\_cub}}
+\index{init\_mat\_cub@{init\_mat\_cub}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{init\_mat\_cub()}{init\_mat\_cub()}}
+{\footnotesize\ttfamily void init\+\_\+mat\+\_\+cub (\begin{DoxyParamCaption}\item[{int}]{combinaisons\mbox{[}\+N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Initialise la matrice cubique passée en paramètre avec des -\/1. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em combinaisons} & est la matrice à initialiser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__exacte_8c_a0b681f2f5d01d094adb99ea8298b462a}\label{grille__exacte_8c_a0b681f2f5d01d094adb99ea8298b462a}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!nombre\_bloc@{nombre\_bloc}}
+\index{nombre\_bloc@{nombre\_bloc}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{nombre\_bloc()}{nombre\_bloc()}}
+{\footnotesize\ttfamily int nombre\+\_\+bloc (\begin{DoxyParamCaption}\item[{int}]{condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{ligne }\end{DoxyParamCaption})}
+
+
+
+Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em condi\+\_\+ligne} & est la matrice des conditions des lignes du picross \\
+\hline
+{\em ligne} & est un indice indiquant la ligne à utiliser \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un entier représentant le nombre de bloc sur la ligne concernée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__exacte_8c_a8646d24d81ac09e9db4d8797942c1f96}\label{grille__exacte_8c_a8646d24d81ac09e9db4d8797942c1f96}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!remplissage\_inter@{remplissage\_inter}}
+\index{remplissage\_inter@{remplissage\_inter}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{remplissage\_inter()}{remplissage\_inter()}}
+{\footnotesize\ttfamily void remplissage\+\_\+inter (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat2\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Copie la première matrice dans la deuxième et complète les vides avec des 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est la matrice dont on souhaite compléter les espaces vides \\
+\hline
+{\em mat2} & sera la copie de la première première matrice mais ayant les 0 au lieu des vides (elle sera compléter par cette fonction) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__exacte_8c_a2dfb216c910df7260bae9a621875f65f}\label{grille__exacte_8c_a2dfb216c910df7260bae9a621875f65f}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!solve@{solve}}
+\index{solve@{solve}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily int solve (\begin{DoxyParamCaption}\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+cond\+\_\+l\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+cond\+\_\+c\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{combinaisons\mbox{[}\+N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Génère des solutions possibles pour la résolution du picross. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est la matrice contenant les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est la matrice contenant les conditions des colonnes du picross \\
+\hline
+{\em combi} & est la matrice cubique contenant les solutions possibles pour la résolution du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__exacte_8c_a60a0052d2a31d07097f3142bb6fb2534}\label{grille__exacte_8c_a60a0052d2a31d07097f3142bb6fb2534}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!somme\_cond\_l@{somme\_cond\_l}}
+\index{somme\_cond\_l@{somme\_cond\_l}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{somme\_cond\_l()}{somme\_cond\_l()}}
+{\footnotesize\ttfamily void somme\+\_\+cond\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{somme\+\_\+cond\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie un tableau avec la somme de chaque lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est la matrice des conditions du picross \\
+\hline
+{\em somme\+\_\+cond} & est le tableau qui contiendra les sommes des conditions des lignes \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__exacte_8c_ae8654ff03a800b1ce4af037e3bff8ea6}\label{grille__exacte_8c_ae8654ff03a800b1ce4af037e3bff8ea6}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!verif\_colonnes@{verif\_colonnes}}
+\index{verif\_colonnes@{verif\_colonnes}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{verif\_colonnes()}{verif\_colonnes()}}
+{\footnotesize\ttfamily int verif\+\_\+colonnes (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifie les colonnes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__exacte_8c_a2ac6e0ca092aad5a474274fbe23a91e1}\label{grille__exacte_8c_a2ac6e0ca092aad5a474274fbe23a91e1}} 
+\index{grille\_exacte.c@{grille\_exacte.c}!verif\_lignes@{verif\_lignes}}
+\index{verif\_lignes@{verif\_lignes}!grille\_exacte.c@{grille\_exacte.c}}
+\doxysubsubsection{\texorpdfstring{verif\_lignes()}{verif\_lignes()}}
+{\footnotesize\ttfamily int verif\+\_\+lignes (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Verifie les lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}

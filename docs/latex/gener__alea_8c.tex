@@ -1,0 +1,87 @@
+\hypertarget{gener__alea_8c}{}\doxysection{Référence du fichier gener\+\_\+alea.\+c}
+\label{gener__alea_8c}\index{gener\_alea.c@{gener\_alea.c}}
+
+
+Ensemble de fonctions générant aléatoirement des conditions de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gener__alea_8c_a0240ac851181b84ac374872dc5434ee4}\label{gener__alea_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~30
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{gener__alea_8c_a059f1b1774a40de1a3c5289ea57b49b9}\label{gener__alea_8c_a059f1b1774a40de1a3c5289ea57b49b9}} 
+void {\bfseries init\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+void \mbox{\hyperlink{gener__alea_8c_a048a1db04e01ad9b41208c255288f676}{affiche\+\_\+matrice}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Affichage d\textquotesingle{}une matrice de picross avec des X et des . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{gener__alea_8c_a6851be93840a22834ef3d529030b5c69}{genera\+\_\+aleatoire}} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie une matrice aléatoirement avec des 0 et des 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{gener__alea_8c_a7661eaee99a1cd483080915a01f79fad}\label{gener__alea_8c_a7661eaee99a1cd483080915a01f79fad}} 
+int {\bfseries valid\+\_\+mat} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int cpt)
+\item 
+\mbox{\Hypertarget{gener__alea_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{gener__alea_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions générant aléatoirement des conditions de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+23 Février 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{gener__alea_8c_a048a1db04e01ad9b41208c255288f676}\label{gener__alea_8c_a048a1db04e01ad9b41208c255288f676}} 
+\index{gener\_alea.c@{gener\_alea.c}!affiche\_matrice@{affiche\_matrice}}
+\index{affiche\_matrice@{affiche\_matrice}!gener\_alea.c@{gener\_alea.c}}
+\doxysubsubsection{\texorpdfstring{affiche\_matrice()}{affiche\_matrice()}}
+{\footnotesize\ttfamily void affiche\+\_\+matrice (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Affichage d\textquotesingle{}une matrice de picross avec des X et des . 
+
+Affiche la matrice passée en paramètre avec des \char`\"{}\+X\char`\"{} et \char`\"{}.\char`\"{}"{}.
+
+Affiche la matrice passée en paramètre.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+{\em matrice} & est la matrice à afficher\\
+\hline
+{\em matrice} & est la matrice à initialiser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{gener__alea_8c_a6851be93840a22834ef3d529030b5c69}\label{gener__alea_8c_a6851be93840a22834ef3d529030b5c69}} 
+\index{gener\_alea.c@{gener\_alea.c}!genera\_aleatoire@{genera\_aleatoire}}
+\index{genera\_aleatoire@{genera\_aleatoire}!gener\_alea.c@{gener\_alea.c}}
+\doxysubsubsection{\texorpdfstring{genera\_aleatoire()}{genera\_aleatoire()}}
+{\footnotesize\ttfamily int genera\+\_\+aleatoire (\begin{DoxyParamCaption}\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie une matrice aléatoirement avec des 0 et des 1. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est la matrice à remplir avec les valeurs générées \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+cpt un compteur de cases noires 
+\end{DoxyReturn}

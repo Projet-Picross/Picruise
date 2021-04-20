@@ -1,0 +1,117 @@
+\hypertarget{jeu_8c}{}\doxysection{Référence du fichier jeu.\+c}
+\label{jeu_8c}\index{jeu.c@{jeu.c}}
+
+
+Fonctions réalisant la phase d\textquotesingle{}intéraction du joueur avec la grille.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/jeu.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{jeu_8c_a8706089cdfd1308f6670f51ac7ca2d10}{jouer}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Rect $\ast$r, int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int nb\+\_\+max\+\_\+cond\+\_\+lignes, int nb\+\_\+max\+\_\+cond\+\_\+colonnes, int format)
+\begin{DoxyCompactList}\small\item\em Fonction réalise la phase d\textquotesingle{}intéraction du joueur sur la grille. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{jeu_8c_aa72d59a0f7935c53d168ff81ebe5c820}{nb\+\_\+max\+\_\+cond}} (int $\ast$mat\+\_\+cond, int format)
+\begin{DoxyCompactList}\small\item\em Calcul le nombre maximum de conditions de la matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{jeu_8c_aa6925accc3b2009a45f13557bc7d8f7f}{jeu}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, int format, char $\ast$grille\+\_\+predef, int joueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions réalisant la phase d\textquotesingle{}intéraction du joueur avec la grille. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{jeu_8c_aa6925accc3b2009a45f13557bc7d8f7f}\label{jeu_8c_aa6925accc3b2009a45f13557bc7d8f7f}} 
+\index{jeu.c@{jeu.c}!jeu@{jeu}}
+\index{jeu@{jeu}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{jeu()}{jeu()}}
+{\footnotesize\ttfamily int jeu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{format,  }\item[{char $\ast$}]{grille\+\_\+predef,  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em grille\+\_\+predef} & est une chaine de caractère comportant le nom de la matrice prédéfinie \\
+\hline
+{\em joueur} & représente le mode de jeu choisit par le joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jeu_8c_a8706089cdfd1308f6670f51ac7ca2d10}\label{jeu_8c_a8706089cdfd1308f6670f51ac7ca2d10}} 
+\index{jeu.c@{jeu.c}!jouer@{jouer}}
+\index{jouer@{jouer}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{jouer()}{jouer()}}
+{\footnotesize\ttfamily int jouer (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Rect $\ast$}]{r,  }\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+lignes,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+colonnes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction réalise la phase d\textquotesingle{}intéraction du joueur sur la grille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+lignes} & est le nombre maximale de condition qu\textquotesingle{}une ligne du picross puisse obtenir \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+colonnes} & est le nombre maximale de condition qu\textquotesingle{}une colonne du picross puisse obtenir \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+une variable utilisée pour perpétuer la boucle d\textquotesingle{}intéraction, sa valeur sera 0 quand on arretera le jeu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{jeu_8c_aa72d59a0f7935c53d168ff81ebe5c820}\label{jeu_8c_aa72d59a0f7935c53d168ff81ebe5c820}} 
+\index{jeu.c@{jeu.c}!nb\_max\_cond@{nb\_max\_cond}}
+\index{nb\_max\_cond@{nb\_max\_cond}!jeu.c@{jeu.c}}
+\doxysubsubsection{\texorpdfstring{nb\_max\_cond()}{nb\_max\_cond()}}
+{\footnotesize\ttfamily int nb\+\_\+max\+\_\+cond (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Calcul le nombre maximum de conditions de la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nb\+\_\+max\+\_\+cond un entier représentant le nombre maximal de condition qu\textquotesingle{}une matrice peut posséder 
+\end{DoxyReturn}

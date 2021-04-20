@@ -1,0 +1,55 @@
+\hypertarget{options_8c}{}\doxysection{Référence du fichier options.\+c}
+\label{options_8c}\index{options.c@{options.c}}
+
+
+Fonction réalisant la page de redimensionnement de l\textquotesingle{}écran de jeu Picruise.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/options.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{options_8c_a3b4f8a50464bac13fba710d3dc4c5426}{options}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet à l\textquotesingle{}utilisateur de choisir les dimensions de l\textquotesingle{}ecran de jeu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonction réalisant la page de redimensionnement de l\textquotesingle{}écran de jeu Picruise. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{options_8c_a3b4f8a50464bac13fba710d3dc4c5426}\label{options_8c_a3b4f8a50464bac13fba710d3dc4c5426}} 
+\index{options.c@{options.c}!options@{options}}
+\index{options@{options}!options.c@{options.c}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily int options (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet à l\textquotesingle{}utilisateur de choisir les dimensions de l\textquotesingle{}ecran de jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}

@@ -1,0 +1,256 @@
+\hypertarget{remplissage__evident_8c}{}\doxysection{Référence du fichier remplissage\+\_\+evident.\+c}
+\label{remplissage__evident_8c}\index{remplissage\_evident.c@{remplissage\_evident.c}}
+
+
+Ensemble de fonctions qui détectent des cas simples de resolution d\textquotesingle{}une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a0240ac851181b84ac374872dc5434ee4}\label{remplissage__evident_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{remplissage__evident_8c_a20ed4ce977259eb7c1d3efa9d6978f27}{copie\+\_\+mat}} (int mat\+\_\+1\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+2\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Copie une matrice dans l\textquotesingle{}autre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{remplissage__evident_8c_ac487094faed5588296dba138568c74f2}\label{remplissage__evident_8c_ac487094faed5588296dba138568c74f2}} 
+int {\bfseries est\+\_\+modifie} (int mat\+\_\+origine\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+modifie\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+int \mbox{\hyperlink{remplissage__evident_8c_abd3772b810e0a7bbd779a899508984e3}{nb\+\_\+condi}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Fonction qui compte le nombre de condition d\textquotesingle{}une matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{remplissage__evident_8c_afd37e40adc22180a304f68b368996353}{extremite\+\_\+ligne}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remplie les extremites des lignes d\textquotesingle{}une matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{remplissage__evident_8c_aa29ea084aa9c202439ded39615a3179c}{extremite\+\_\+colonne}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+colonne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remplie les extremites des colonnes d\textquotesingle{}une matrice. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a833b37a3faf46b4e004d3702e89a5ff0}\label{remplissage__evident_8c_a833b37a3faf46b4e004d3702e89a5ff0}} 
+int {\bfseries cas\+\_\+basique\+\_\+l} (int mat\+\_\+condition\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_aa9fa07c83a7ede0c664c2015088c4520}\label{remplissage__evident_8c_aa9fa07c83a7ede0c664c2015088c4520}} 
+int {\bfseries cas\+\_\+basique\+\_\+c} (int mat\+\_\+condition\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_ab2e8fdc25726172faf0708c2b722f4f2}\label{remplissage__evident_8c_ab2e8fdc25726172faf0708c2b722f4f2}} 
+int {\bfseries cas\+\_\+mediane\+\_\+l} (int mat\+\_\+condition\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a7e84622cff7577133cdd4a2c99fd58b7}\label{remplissage__evident_8c_a7e84622cff7577133cdd4a2c99fd58b7}} 
+int {\bfseries cas\+\_\+mediane\+\_\+c} (int mat\+\_\+condition\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+int \mbox{\hyperlink{remplissage__evident_8c_abdae04dafc31bf282de3a412e53f0b45}{cas\+\_\+uniques\+\_\+ligne}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remplies les lignes d\textquotesingle{}une matrice ayant une case noire sur deux. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{remplissage__evident_8c_ab0fdc869b5b34ec4cc1e1dadb3437b2f}{cas\+\_\+uniques\+\_\+colonne}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+colonne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remplies les colonnes d\textquotesingle{}une matrice ayant une case noire sur deux. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{remplissage__evident_8c_acc7d33dc29a0d01610bd0c1ed6259c0b}\label{remplissage__evident_8c_acc7d33dc29a0d01610bd0c1ed6259c0b}} 
+int {\bfseries remp\+\_\+intermediaires\+\_\+l} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a13b50d04e0693ea456fefad7f4298910}\label{remplissage__evident_8c_a13b50d04e0693ea456fefad7f4298910}} 
+int {\bfseries remp\+\_\+intermediaires\+\_\+c} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a8b4fc35d3fec14fa1894901e6d6dfdb2}\label{remplissage__evident_8c_a8b4fc35d3fec14fa1894901e6d6dfdb2}} 
+int {\bfseries remp\+\_\+derniere\+\_\+cond\+\_\+l} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a01b3d9c2aef757da969ea029cea939cc}\label{remplissage__evident_8c_a01b3d9c2aef757da969ea029cea939cc}} 
+int {\bfseries remp\+\_\+derniere\+\_\+cond\+\_\+c} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a81d4863b05d8f7d93f073c7c1957dc1b}\label{remplissage__evident_8c_a81d4863b05d8f7d93f073c7c1957dc1b}} 
+int {\bfseries remp\+\_\+blanc\+\_\+noire\+\_\+l} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{remplissage__evident_8c_a654bcb2402c4eac4047dffb0ad517291}\label{remplissage__evident_8c_a654bcb2402c4eac4047dffb0ad517291}} 
+int {\bfseries remp\+\_\+blanc\+\_\+noire\+\_\+c} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+void \mbox{\hyperlink{remplissage__evident_8c_ab0819d08f3aef38187b769684b16edfe}{remplissage\+\_\+evident}} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+colonne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction appelle toute les fonctions de remplissages récursivement. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions qui détectent des cas simples de resolution d\textquotesingle{}une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+12 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{remplissage__evident_8c_ab0fdc869b5b34ec4cc1e1dadb3437b2f}\label{remplissage__evident_8c_ab0fdc869b5b34ec4cc1e1dadb3437b2f}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!cas\_uniques\_colonne@{cas\_uniques\_colonne}}
+\index{cas\_uniques\_colonne@{cas\_uniques\_colonne}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{cas\_uniques\_colonne()}{cas\_uniques\_colonne()}}
+{\footnotesize\ttfamily int cas\+\_\+uniques\+\_\+colonne (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+colonne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplies les colonnes d\textquotesingle{}une matrice ayant une case noire sur deux. 
+
+Fonction qui remplie les colonnes d\textquotesingle{}une matrice.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonne} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifié, 0 sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonne} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{remplissage__evident_8c_abdae04dafc31bf282de3a412e53f0b45}\label{remplissage__evident_8c_abdae04dafc31bf282de3a412e53f0b45}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!cas\_uniques\_ligne@{cas\_uniques\_ligne}}
+\index{cas\_uniques\_ligne@{cas\_uniques\_ligne}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{cas\_uniques\_ligne()}{cas\_uniques\_ligne()}}
+{\footnotesize\ttfamily int cas\+\_\+uniques\+\_\+ligne (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplies les lignes d\textquotesingle{}une matrice ayant une case noire sur deux. 
+
+Fonction qui remplie les lignes d\textquotesingle{}une matrice.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifié, 0 sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{remplissage__evident_8c_a20ed4ce977259eb7c1d3efa9d6978f27}\label{remplissage__evident_8c_a20ed4ce977259eb7c1d3efa9d6978f27}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!copie\_mat@{copie\_mat}}
+\index{copie\_mat@{copie\_mat}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{copie\_mat()}{copie\_mat()}}
+{\footnotesize\ttfamily void copie\+\_\+mat (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+1\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+2\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Copie une matrice dans l\textquotesingle{}autre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+1} & est une matrice qui contiendra des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+2} & une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) qui sera copiée dans la première matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{remplissage__evident_8c_aa29ea084aa9c202439ded39615a3179c}\label{remplissage__evident_8c_aa29ea084aa9c202439ded39615a3179c}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!extremite\_colonne@{extremite\_colonne}}
+\index{extremite\_colonne@{extremite\_colonne}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{extremite\_colonne()}{extremite\_colonne()}}
+{\footnotesize\ttfamily int extremite\+\_\+colonne (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+colonne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplie les extremites des colonnes d\textquotesingle{}une matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonne} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonne} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{remplissage__evident_8c_afd37e40adc22180a304f68b368996353}\label{remplissage__evident_8c_afd37e40adc22180a304f68b368996353}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!extremite\_ligne@{extremite\_ligne}}
+\index{extremite\_ligne@{extremite\_ligne}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{extremite\_ligne()}{extremite\_ligne()}}
+{\footnotesize\ttfamily int extremite\+\_\+ligne (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplie les extremites des lignes d\textquotesingle{}une matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{remplissage__evident_8c_abd3772b810e0a7bbd779a899508984e3}\label{remplissage__evident_8c_abd3772b810e0a7bbd779a899508984e3}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!nb\_condi@{nb\_condi}}
+\index{nb\_condi@{nb\_condi}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{nb\_condi()}{nb\_condi()}}
+{\footnotesize\ttfamily int nb\+\_\+condi (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Fonction qui compte le nombre de condition d\textquotesingle{}une matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant les conditions à appliquer sur la futur matrice du joueur \\
+\hline
+{\em i} & est ligne de la matrice où l\textquotesingle{}on souhaite compter les conditions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+le nombre de conditions
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice qui les conditions à appliquer sur le picross \\
+\hline
+{\em i} & est l\textquotesingle{}indice de la ligne dont on souhaite connaitre le nombre de condition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+le nombre de condition de la matrice présentes sur la ligne d\textquotesingle{}indice i 
+\end{DoxyReturn}
+\mbox{\Hypertarget{remplissage__evident_8c_ab0819d08f3aef38187b769684b16edfe}\label{remplissage__evident_8c_ab0819d08f3aef38187b769684b16edfe}} 
+\index{remplissage\_evident.c@{remplissage\_evident.c}!remplissage\_evident@{remplissage\_evident}}
+\index{remplissage\_evident@{remplissage\_evident}!remplissage\_evident.c@{remplissage\_evident.c}}
+\doxysubsubsection{\texorpdfstring{remplissage\_evident()}{remplissage\_evident()}}
+{\footnotesize\ttfamily void remplissage\+\_\+evident (\begin{DoxyParamCaption}\item[{int}]{matrice\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+condi\+\_\+colonne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction appelle toute les fonctions de remplissages récursivement. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+condi\+\_\+ligne} & est une matrice contenant les conditions de chaque lignes du picross \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonne} & est une matrice contenant les conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}

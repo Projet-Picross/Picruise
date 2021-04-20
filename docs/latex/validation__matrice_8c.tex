@@ -1,0 +1,119 @@
+\hypertarget{validation__matrice_8c}{}\doxysection{Référence du fichier validation\+\_\+matrice.\+c}
+\label{validation__matrice_8c}\index{validation\_matrice.c@{validation\_matrice.c}}
+
+
+Ensemble de fonctions qui valide le bon usage de la grille.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$g\+\_\+aleatoire.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{validation__matrice_8c_a0240ac851181b84ac374872dc5434ee4}\label{validation__matrice_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{validation__matrice_8c_ac7283df652c71378601315c26e2f198a}{validation\+\_\+grille}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int compteur)
+\begin{DoxyCompactList}\small\item\em Vérifie que la matrice possède le bon nombre de cases. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{validation__matrice_8c_a3916a3e5a10b3a4316f092a8195aab88}{validation\+\_\+nb\+\_\+min}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int compteur)
+\begin{DoxyCompactList}\small\item\em Vérifie si l\textquotesingle{}entier compteur passé par paramètre est inférieur à 25\% du nombre de case de la matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{validation__matrice_8c_a51cd0be407fe5440262e1fdaf728ea62}{validation\+\_\+nb\+\_\+max}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int compteur)
+\begin{DoxyCompactList}\small\item\em Vérifie si l\textquotesingle{}entier compteur passé par paramètre est supérieur à 75\% du nombre de case de la matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{validation__matrice_8c_abe5b0f78ae622319ce86823d47464724}{validation\+\_\+case}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Vérifie si toutes les cases sont des entiers 0 et 1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions qui valide le bon usage de la grille. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+22 Février 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{validation__matrice_8c_abe5b0f78ae622319ce86823d47464724}\label{validation__matrice_8c_abe5b0f78ae622319ce86823d47464724}} 
+\index{validation\_matrice.c@{validation\_matrice.c}!validation\_case@{validation\_case}}
+\index{validation\_case@{validation\_case}!validation\_matrice.c@{validation\_matrice.c}}
+\doxysubsubsection{\texorpdfstring{validation\_case()}{validation\_case()}}
+{\footnotesize\ttfamily int validation\+\_\+case (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Vérifie si toutes les cases sont des entiers 0 et 1. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation__matrice_8c_ac7283df652c71378601315c26e2f198a}\label{validation__matrice_8c_ac7283df652c71378601315c26e2f198a}} 
+\index{validation\_matrice.c@{validation\_matrice.c}!validation\_grille@{validation\_grille}}
+\index{validation\_grille@{validation\_grille}!validation\_matrice.c@{validation\_matrice.c}}
+\doxysubsubsection{\texorpdfstring{validation\_grille()}{validation\_grille()}}
+{\footnotesize\ttfamily int validation\+\_\+grille (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{compteur }\end{DoxyParamCaption})}
+
+
+
+Vérifie que la matrice possède le bon nombre de cases. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em compteur} & est un entier qui compte le nombre de cases de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation__matrice_8c_a51cd0be407fe5440262e1fdaf728ea62}\label{validation__matrice_8c_a51cd0be407fe5440262e1fdaf728ea62}} 
+\index{validation\_matrice.c@{validation\_matrice.c}!validation\_nb\_max@{validation\_nb\_max}}
+\index{validation\_nb\_max@{validation\_nb\_max}!validation\_matrice.c@{validation\_matrice.c}}
+\doxysubsubsection{\texorpdfstring{validation\_nb\_max()}{validation\_nb\_max()}}
+{\footnotesize\ttfamily int validation\+\_\+nb\+\_\+max (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{compteur }\end{DoxyParamCaption})}
+
+
+
+Vérifie si l\textquotesingle{}entier compteur passé par paramètre est supérieur à 75\% du nombre de case de la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em compteur} & est un entier qui représente le nombre de cases de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si le compteur est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{validation__matrice_8c_a3916a3e5a10b3a4316f092a8195aab88}\label{validation__matrice_8c_a3916a3e5a10b3a4316f092a8195aab88}} 
+\index{validation\_matrice.c@{validation\_matrice.c}!validation\_nb\_min@{validation\_nb\_min}}
+\index{validation\_nb\_min@{validation\_nb\_min}!validation\_matrice.c@{validation\_matrice.c}}
+\doxysubsubsection{\texorpdfstring{validation\_nb\_min()}{validation\_nb\_min()}}
+{\footnotesize\ttfamily int validation\+\_\+nb\+\_\+min (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{compteur }\end{DoxyParamCaption})}
+
+
+
+Vérifie si l\textquotesingle{}entier compteur passé par paramètre est inférieur à 25\% du nombre de case de la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em compteur} & est un entier qui représente le nombre de cases de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si le compteur est correct, 0 sinon 
+\end{DoxyReturn}

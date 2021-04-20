@@ -1,0 +1,75 @@
+\hypertarget{save_8c}{}\doxysection{Référence du fichier save.\+c}
+\label{save_8c}\index{save.c@{save.c}}
+
+
+Ensemble de fonctions permettant la sauvegarde et la restitution d\textquotesingle{}une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{save_8c_a0240ac851181b84ac374872dc5434ee4}\label{save_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{save_8c_a4d5fe4735cca2556babe0d7151e39b92}{enregistrer}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int resultat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Sauvegarde l\textquotesingle{}état de la matrice du joueur ainsi que celle de la solution. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{save_8c_a60bfc1f020d8daa44f8304bfa932fe3d}{recuperation}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int resultat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Restitue l\textquotesingle{}état de la matrice du joueur ainsi que celle de la solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{save_8c_a8c69f8b51c06c11110b56707f6e194b9}\label{save_8c_a8c69f8b51c06c11110b56707f6e194b9}} 
+FILE $\ast$ \mbox{\hyperlink{save_8c_a8c69f8b51c06c11110b56707f6e194b9}{fichier}}
+\begin{DoxyCompactList}\small\item\em Fichier de sauvegarde. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions permettant la sauvegarde et la restitution d\textquotesingle{}une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Février 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{save_8c_a4d5fe4735cca2556babe0d7151e39b92}\label{save_8c_a4d5fe4735cca2556babe0d7151e39b92}} 
+\index{save.c@{save.c}!enregistrer@{enregistrer}}
+\index{enregistrer@{enregistrer}!save.c@{save.c}}
+\doxysubsubsection{\texorpdfstring{enregistrer()}{enregistrer()}}
+{\footnotesize\ttfamily void enregistrer (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{resultat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Sauvegarde l\textquotesingle{}état de la matrice du joueur ainsi que celle de la solution. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em resultat} & est la matrice contenant la solution du picross \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{save_8c_a60bfc1f020d8daa44f8304bfa932fe3d}\label{save_8c_a60bfc1f020d8daa44f8304bfa932fe3d}} 
+\index{save.c@{save.c}!recuperation@{recuperation}}
+\index{recuperation@{recuperation}!save.c@{save.c}}
+\doxysubsubsection{\texorpdfstring{recuperation()}{recuperation()}}
+{\footnotesize\ttfamily void recuperation (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{resultat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Restitue l\textquotesingle{}état de la matrice du joueur ainsi que celle de la solution. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em resultat} & est la matrice contenant la solution du picross \\
+\hline
+\end{DoxyParams}

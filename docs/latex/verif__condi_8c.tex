@@ -1,0 +1,87 @@
+\hypertarget{verif__condi_8c}{}\doxysection{Référence du fichier verif\+\_\+condi.\+c}
+\label{verif__condi_8c}\index{verif\_condi.c@{verif\_condi.c}}
+
+
+Ensemble de fonctions vérifiant certaines conditions d\textquotesingle{}une matrice.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{verif__condi_8c_a0240ac851181b84ac374872dc5434ee4}\label{verif__condi_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{verif__condi_8c_a1e0b3391f655fb3b4980c64db225dffc}\label{verif__condi_8c_a1e0b3391f655fb3b4980c64db225dffc}} 
+int {\bfseries contradiction\+\_\+somme\+\_\+l} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+int \mbox{\hyperlink{verif__condi_8c_a935fda505a076e8b5f09634b7d4b5fe2}{nb\+\_\+bloc}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int condi\+\_\+colonne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Vérifie que chaque lignes et colonnes possèdent autant de blocs de cases noires que l\textquotesingle{}indique la matrice. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{verif__condi_8c_a8646d24d81ac09e9db4d8797942c1f96}\label{verif__condi_8c_a8646d24d81ac09e9db4d8797942c1f96}} 
+void {\bfseries remplissage\+\_\+inter} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat2\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+int \mbox{\hyperlink{verif__condi_8c_abfe16bcfa570d5cb08bb98a673184327}{taille\+\_\+bloc\+\_\+noir}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int condi\+\_\+colonne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Vérifie la taille de chaque bloc de cases noires des matrices conditions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions vérifiant certaines conditions d\textquotesingle{}une matrice. 
+
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+25 Février 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{verif__condi_8c_a935fda505a076e8b5f09634b7d4b5fe2}\label{verif__condi_8c_a935fda505a076e8b5f09634b7d4b5fe2}} 
+\index{verif\_condi.c@{verif\_condi.c}!nb\_bloc@{nb\_bloc}}
+\index{nb\_bloc@{nb\_bloc}!verif\_condi.c@{verif\_condi.c}}
+\doxysubsubsection{\texorpdfstring{nb\_bloc()}{nb\_bloc()}}
+{\footnotesize\ttfamily int nb\+\_\+bloc (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{condi\+\_\+colonne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Vérifie que chaque lignes et colonnes possèdent autant de blocs de cases noires que l\textquotesingle{}indique la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est la matrice à laquelle on applique les conditions \\
+\hline
+{\em condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em condi\+\_\+colonne} & est la matrices des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice condition ne possède pas de contradictions, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{verif__condi_8c_abfe16bcfa570d5cb08bb98a673184327}\label{verif__condi_8c_abfe16bcfa570d5cb08bb98a673184327}} 
+\index{verif\_condi.c@{verif\_condi.c}!taille\_bloc\_noir@{taille\_bloc\_noir}}
+\index{taille\_bloc\_noir@{taille\_bloc\_noir}!verif\_condi.c@{verif\_condi.c}}
+\doxysubsubsection{\texorpdfstring{taille\_bloc\_noir()}{taille\_bloc\_noir()}}
+{\footnotesize\ttfamily int taille\+\_\+bloc\+\_\+noir (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{condi\+\_\+ligne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{condi\+\_\+colonne\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Vérifie la taille de chaque bloc de cases noires des matrices conditions. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em condi\+\_\+ligne} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em condi\+\_\+colonne} & est la matrices des conditions de chaque colonnes du picross \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice condition ne possède pas de contradictions, 0 sinon 
+\end{DoxyReturn}

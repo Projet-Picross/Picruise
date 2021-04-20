@@ -1,0 +1,81 @@
+\hypertarget{verif_8c}{}\doxysection{Référence du fichier verif.\+c}
+\label{verif_8c}\index{verif.c@{verif.c}}
+
+
+Fonctions vérifiant les conditions d\textquotesingle{}une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/verif.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{verif_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}{verif\+\_\+lignes}} (int $\ast$mat\+\_\+cond, int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Verifie les lignes de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{verif_8c_a471e768307d5575087eebaade7040d31}{verif\+\_\+colonnes}} (int $\ast$mat\+\_\+cond, int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Verifie les colonnes de la matrice condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions vérifiant les conditions d\textquotesingle{}une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{verif_8c_a471e768307d5575087eebaade7040d31}\label{verif_8c_a471e768307d5575087eebaade7040d31}} 
+\index{verif.c@{verif.c}!verif\_colonnes@{verif\_colonnes}}
+\index{verif\_colonnes@{verif\_colonnes}!verif.c@{verif.c}}
+\doxysubsubsection{\texorpdfstring{verif\_colonnes()}{verif\_colonnes()}}
+{\footnotesize\ttfamily int verif\+\_\+colonnes (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Verifie les colonnes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{verif_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}\label{verif_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}} 
+\index{verif.c@{verif.c}!verif\_lignes@{verif\_lignes}}
+\index{verif\_lignes@{verif\_lignes}!verif.c@{verif.c}}
+\doxysubsubsection{\texorpdfstring{verif\_lignes()}{verif\_lignes()}}
+{\footnotesize\ttfamily int verif\+\_\+lignes (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Verifie les lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}

@@ -1,0 +1,53 @@
+\hypertarget{changement_8c}{}\doxysection{Référence du fichier changement.\+c}
+\label{changement_8c}\index{changement.c@{changement.c}}
+
+
+Fonction de vérification de l\textquotesingle{}état de la matrice.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{changement_8c_a0240ac851181b84ac374872dc5434ee4}\label{changement_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~11
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{changement_8c_ac487094faed5588296dba138568c74f2}{est\+\_\+modifie}} (int mat\+\_\+origine\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+modifie\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Vérifie si les deux matrices sont différentes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonction de vérification de l\textquotesingle{}état de la matrice. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+5 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{changement_8c_ac487094faed5588296dba138568c74f2}\label{changement_8c_ac487094faed5588296dba138568c74f2}} 
+\index{changement.c@{changement.c}!est\_modifie@{est\_modifie}}
+\index{est\_modifie@{est\_modifie}!changement.c@{changement.c}}
+\doxysubsubsection{\texorpdfstring{est\_modifie()}{est\_modifie()}}
+{\footnotesize\ttfamily int est\+\_\+modifie (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+origine\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+modifie\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Vérifie si les deux matrices sont différentes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+origine} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+modifie} & est la première matrice ayant potentiellement subit des modifications par d\textquotesingle{}autres fonctions \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice d\textquotesingle{}origine à été modifiée, 0 sinon 
+\end{DoxyReturn}

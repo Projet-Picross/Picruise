@@ -1,0 +1,201 @@
+\hypertarget{solveur_8c}{}\doxysection{Référence du fichier solveur.\+c}
+\label{solveur_8c}\index{solveur.c@{solveur.c}}
+
+
+Fonctions permettant la résolution d\textquotesingle{}une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/solveur.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{solveur_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}{nombre\+\_\+bloc}} (int $\ast$condi\+\_\+ligne, int ligne, int format)
+\begin{DoxyCompactList}\small\item\em Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{solveur_8c_a4567a89fb4eeb292041acacba9959639}{somme\+\_\+cond\+\_\+l}} (int $\ast$mat\+\_\+cond, int $\ast$somme\+\_\+cond, int format)
+\begin{DoxyCompactList}\small\item\em Remplie un tableau avec la somme de chaque lignes de la matrice condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{solveur_8c_aace37d6c86dcf9971353c8a8c877d346}{remplissage\+\_\+inter}} (int $\ast$mat, int $\ast$mat2, int format)
+\begin{DoxyCompactList}\small\item\em Copie la première matrice dans la deuxième et complète les vides avec des 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solveur_8c_a64866b5b6811b41dbcfac3f235fb1fd3}{solve}} (int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int $\ast$combinaisons, int format)
+\begin{DoxyCompactList}\small\item\em Génère des solutions possibles pour la résolution du picross. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solveur_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}{resoudre\+\_\+grille}} (int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int $\ast$combinaisons, int i, int format)
+\begin{DoxyCompactList}\small\item\em Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{solveur_8c_a3f96d4b22a03ea2c69ab27a5c10d82f1}{init\+\_\+mat\+\_\+cub}} (int $\ast$combinaisons, int format)
+\begin{DoxyCompactList}\small\item\em Initialise la matrice cubique avec des -\/1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{solveur_8c_ada92a6620a64b7ff7594eace9baa1410}{solveur}} (int $\ast$grille, int $\ast$\mbox{\hyperlink{jeu_8c_aa6925accc3b2009a45f13557bc7d8f7f}{jeu}}, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int format)
+\begin{DoxyCompactList}\small\item\em Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions permettant la résolution d\textquotesingle{}une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{solveur_8c_a3f96d4b22a03ea2c69ab27a5c10d82f1}\label{solveur_8c_a3f96d4b22a03ea2c69ab27a5c10d82f1}} 
+\index{solveur.c@{solveur.c}!init\_mat\_cub@{init\_mat\_cub}}
+\index{init\_mat\_cub@{init\_mat\_cub}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{init\_mat\_cub()}{init\_mat\_cub()}}
+{\footnotesize\ttfamily void init\+\_\+mat\+\_\+cub (\begin{DoxyParamCaption}\item[{int $\ast$}]{combinaisons,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Initialise la matrice cubique avec des -\/1. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em combinaisons} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la matrice cubique \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{solveur_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}\label{solveur_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}} 
+\index{solveur.c@{solveur.c}!nombre\_bloc@{nombre\_bloc}}
+\index{nombre\_bloc@{nombre\_bloc}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{nombre\_bloc()}{nombre\_bloc()}}
+{\footnotesize\ttfamily int nombre\+\_\+bloc (\begin{DoxyParamCaption}\item[{int $\ast$}]{condi\+\_\+ligne,  }\item[{int}]{ligne,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em condi\+\_\+ligne} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em ligne} & est un indice indiquant la ligne à utiliser \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un entier représentant le nombre de bloc sur la ligne concernée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solveur_8c_aace37d6c86dcf9971353c8a8c877d346}\label{solveur_8c_aace37d6c86dcf9971353c8a8c877d346}} 
+\index{solveur.c@{solveur.c}!remplissage\_inter@{remplissage\_inter}}
+\index{remplissage\_inter@{remplissage\_inter}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{remplissage\_inter()}{remplissage\_inter()}}
+{\footnotesize\ttfamily void remplissage\+\_\+inter (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat,  }\item[{int $\ast$}]{mat2,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Copie la première matrice dans la deuxième et complète les vides avec des 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em mat2} & est un pointeur d\textquotesingle{}entier et sera la copie de mat mais pointant sur des 0 quand il y a des vides (elle complete mat) \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{solveur_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}\label{solveur_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}} 
+\index{solveur.c@{solveur.c}!resoudre\_grille@{resoudre\_grille}}
+\index{resoudre\_grille@{resoudre\_grille}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{resoudre\_grille()}{resoudre\_grille()}}
+{\footnotesize\ttfamily int resoudre\+\_\+grille (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int $\ast$}]{combinaisons,  }\item[{int}]{i,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em combinaisons} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la matrice cubique \\
+\hline
+{\em i} & est un entier indique la ligne de la matrice à traiter \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{solveur_8c_a64866b5b6811b41dbcfac3f235fb1fd3}\label{solveur_8c_a64866b5b6811b41dbcfac3f235fb1fd3}} 
+\index{solveur.c@{solveur.c}!solve@{solve}}
+\index{solve@{solve}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily int solve (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int $\ast$}]{combinaisons,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génère des solutions possibles pour la résolution du picross. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em combinaisons} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la matrice cubique \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solveur_8c_ada92a6620a64b7ff7594eace9baa1410}\label{solveur_8c_ada92a6620a64b7ff7594eace9baa1410}} 
+\index{solveur.c@{solveur.c}!solveur@{solveur}}
+\index{solveur@{solveur}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{solveur()}{solveur()}}
+{\footnotesize\ttfamily int solveur (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{jeu,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em jeu} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases d\textquotesingle{}une grille dont on effectuera des modifications \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est résolue, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{solveur_8c_a4567a89fb4eeb292041acacba9959639}\label{solveur_8c_a4567a89fb4eeb292041acacba9959639}} 
+\index{solveur.c@{solveur.c}!somme\_cond\_l@{somme\_cond\_l}}
+\index{somme\_cond\_l@{somme\_cond\_l}!solveur.c@{solveur.c}}
+\doxysubsubsection{\texorpdfstring{somme\_cond\_l()}{somme\_cond\_l()}}
+{\footnotesize\ttfamily void somme\+\_\+cond\+\_\+l (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{somme\+\_\+cond,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Remplie un tableau avec la somme de chaque lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em somme\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les sommes des conditions des lignes \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}

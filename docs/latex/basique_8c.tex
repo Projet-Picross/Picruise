@@ -1,0 +1,158 @@
+\hypertarget{basique_8c}{}\doxysection{Référence du fichier basique.\+c}
+\label{basique_8c}\index{basique.c@{basique.c}}
+
+
+Ensemble de fonctions vérifiant la présence de cas basique dans un picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{basique_8c_a0240ac851181b84ac374872dc5434ee4}\label{basique_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{basique_8c_a0cfaf1c4f61a0341915c662a28fddf1d}{somme\+\_\+nb\+\_\+cond}} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Compte le nombre de condition présentes dans la matrice passée en paramètre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basique_8c_a833b37a3faf46b4e004d3702e89a5ff0}{cas\+\_\+basique\+\_\+l}} (int mat\+\_\+condition\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie la grille si les lignes sont vides/pleines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basique_8c_aa9fa07c83a7ede0c664c2015088c4520}{cas\+\_\+basique\+\_\+c}} (int mat\+\_\+condition\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie la grille si les colonnes sont vides/pleines. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basique_8c_ab2e8fdc25726172faf0708c2b722f4f2}{cas\+\_\+mediane\+\_\+l}} (int mat\+\_\+condition\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie la grille si les lignes sont à moitié remplies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{basique_8c_a7e84622cff7577133cdd4a2c99fd58b7}{cas\+\_\+mediane\+\_\+c}} (int mat\+\_\+condition\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Remplie la grille si les colonnes sont à moitié remplies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions vérifiant la présence de cas basique dans un picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+5 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{basique_8c_aa9fa07c83a7ede0c664c2015088c4520}\label{basique_8c_aa9fa07c83a7ede0c664c2015088c4520}} 
+\index{basique.c@{basique.c}!cas\_basique\_c@{cas\_basique\_c}}
+\index{cas\_basique\_c@{cas\_basique\_c}!basique.c@{basique.c}}
+\doxysubsubsection{\texorpdfstring{cas\_basique\_c()}{cas\_basique\_c()}}
+{\footnotesize\ttfamily int cas\+\_\+basique\+\_\+c (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+condition\+\_\+c\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie la grille si les colonnes sont vides/pleines. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+condition\+\_\+c} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+{\em mat\+\_\+condition\+\_\+c} & est la matrice des conditions de chaque colonnes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basique_8c_a833b37a3faf46b4e004d3702e89a5ff0}\label{basique_8c_a833b37a3faf46b4e004d3702e89a5ff0}} 
+\index{basique.c@{basique.c}!cas\_basique\_l@{cas\_basique\_l}}
+\index{cas\_basique\_l@{cas\_basique\_l}!basique.c@{basique.c}}
+\doxysubsubsection{\texorpdfstring{cas\_basique\_l()}{cas\_basique\_l()}}
+{\footnotesize\ttfamily int cas\+\_\+basique\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+condition\+\_\+l\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie la grille si les lignes sont vides/pleines. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+condition\+\_\+l} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+{\em mat\+\_\+condition\+\_\+l} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basique_8c_a7e84622cff7577133cdd4a2c99fd58b7}\label{basique_8c_a7e84622cff7577133cdd4a2c99fd58b7}} 
+\index{basique.c@{basique.c}!cas\_mediane\_c@{cas\_mediane\_c}}
+\index{cas\_mediane\_c@{cas\_mediane\_c}!basique.c@{basique.c}}
+\doxysubsubsection{\texorpdfstring{cas\_mediane\_c()}{cas\_mediane\_c()}}
+{\footnotesize\ttfamily int cas\+\_\+mediane\+\_\+c (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+condition\+\_\+c\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie la grille si les colonnes sont à moitié remplies. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+condition\+\_\+c} & est la matrice des conditions de chaque colonne du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+{\em mat\+\_\+condition\+\_\+c} & est la matrice des conditions de chaque colonne du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basique_8c_ab2e8fdc25726172faf0708c2b722f4f2}\label{basique_8c_ab2e8fdc25726172faf0708c2b722f4f2}} 
+\index{basique.c@{basique.c}!cas\_mediane\_l@{cas\_mediane\_l}}
+\index{cas\_mediane\_l@{cas\_mediane\_l}!basique.c@{basique.c}}
+\doxysubsubsection{\texorpdfstring{cas\_mediane\_l()}{cas\_mediane\_l()}}
+{\footnotesize\ttfamily int cas\+\_\+mediane\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+condition\+\_\+l\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Remplie la grille si les lignes sont à moitié remplies. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+condition\+\_\+l} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+{\em mat\+\_\+condition\+\_\+l} & est la matrice des conditions de chaque lignes du picross \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{basique_8c_a0cfaf1c4f61a0341915c662a28fddf1d}\label{basique_8c_a0cfaf1c4f61a0341915c662a28fddf1d}} 
+\index{basique.c@{basique.c}!somme\_nb\_cond@{somme\_nb\_cond}}
+\index{somme\_nb\_cond@{somme\_nb\_cond}!basique.c@{basique.c}}
+\doxysubsubsection{\texorpdfstring{somme\_nb\_cond()}{somme\_nb\_cond()}}
+{\footnotesize\ttfamily int somme\+\_\+nb\+\_\+cond (\begin{DoxyParamCaption}\item[{int}]{mat\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Compte le nombre de condition présentes dans la matrice passée en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est une matrice représentant les conditions à appliquer au picross \\
+\hline
+{\em i} & indice de la ligne de la matrice où on veut compter le nombre de condition \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+compteur de condition de la ligne concernée 
+\end{DoxyReturn}

@@ -1,0 +1,142 @@
+\hypertarget{picruise_8c}{}\doxysection{Référence du fichier picruise.\+c}
+\label{picruise_8c}\index{picruise.c@{picruise.c}}
+
+
+Affichage d\textquotesingle{}un menu de jeu en SDL pour le jeu Picruise.  
+
+
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+image.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{picruise_8c_ad0121e0ade39fd4d3e67c9da0911e0fc}{choix\+\_\+type\+\_\+grille}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui réalise la page de sélection du type de grille. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise_8c_a45a861a2f40094bb8a20e4549ff96d52}{accueil}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui réalise la page d\textquotesingle{}accueil du jeu Picruise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise_8c_a459c053195a9f162666a5d5b83f78c1e}{choix\+\_\+format}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui réalise la page de sélection du format de la grille aléatoire. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise_8c_aa49300b31544e6d6a9af7fbe325e346c}{predefinie}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui réalise la page de sélection des grilles prédéfinies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{picruise_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{picruise_8c_a3482785bd2a4c8b307f9e0b6f54e2c36}\label{picruise_8c_a3482785bd2a4c8b307f9e0b6f54e2c36}} 
+const int \mbox{\hyperlink{picruise_8c_a3482785bd2a4c8b307f9e0b6f54e2c36}{SCREEN\+\_\+\+WIDTH}} = 1366
+\begin{DoxyCompactList}\small\item\em const int SCREEN\+\_\+\+WIDTH est une constante correspondant à la largeur de la fenêtre en pixel const int SCREEN\+\_\+\+HEIGHT est une constante correspondant à la hauteur de la fenêtre en pixel \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise_8c_ab454541ae58bcf6555e8d723b1eb95e7}\label{picruise_8c_ab454541ae58bcf6555e8d723b1eb95e7}} 
+const int {\bfseries SCREEN\+\_\+\+HEIGHT} = 768
+\item 
+\mbox{\Hypertarget{picruise_8c_aa4d434a8b93410ea0ed660e48dac41c6}\label{picruise_8c_aa4d434a8b93410ea0ed660e48dac41c6}} 
+int {\bfseries screen\+\_\+width} = 1366
+\item 
+\mbox{\Hypertarget{picruise_8c_a3b4a1bd850991355b91c7bfc15247d49}\label{picruise_8c_a3b4a1bd850991355b91c7bfc15247d49}} 
+int {\bfseries screen\+\_\+height} = 768
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Affichage d\textquotesingle{}un menu de jeu en SDL pour le jeu Picruise. 
+
+\begin{DoxyVersion}{Version}
+1.\+2 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+5 Avril 2021
+\end{DoxyDate}
+\begin{DoxyVersion}{Version}
+1.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+5 Avril 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{picruise_8c_a45a861a2f40094bb8a20e4549ff96d52}\label{picruise_8c_a45a861a2f40094bb8a20e4549ff96d52}} 
+\index{picruise.c@{picruise.c}!accueil@{accueil}}
+\index{accueil@{accueil}!picruise.c@{picruise.c}}
+\doxysubsubsection{\texorpdfstring{accueil()}{accueil()}}
+{\footnotesize\ttfamily int accueil (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui réalise la page d\textquotesingle{}accueil du jeu Picruise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise_8c_a459c053195a9f162666a5d5b83f78c1e}\label{picruise_8c_a459c053195a9f162666a5d5b83f78c1e}} 
+\index{picruise.c@{picruise.c}!choix\_format@{choix\_format}}
+\index{choix\_format@{choix\_format}!picruise.c@{picruise.c}}
+\doxysubsubsection{\texorpdfstring{choix\_format()}{choix\_format()}}
+{\footnotesize\ttfamily int choix\+\_\+format (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui réalise la page de sélection du format de la grille aléatoire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise_8c_ad0121e0ade39fd4d3e67c9da0911e0fc}\label{picruise_8c_ad0121e0ade39fd4d3e67c9da0911e0fc}} 
+\index{picruise.c@{picruise.c}!choix\_type\_grille@{choix\_type\_grille}}
+\index{choix\_type\_grille@{choix\_type\_grille}!picruise.c@{picruise.c}}
+\doxysubsubsection{\texorpdfstring{choix\_type\_grille()}{choix\_type\_grille()}}
+{\footnotesize\ttfamily int choix\+\_\+type\+\_\+grille (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui réalise la page de sélection du type de grille. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise_8c_aa49300b31544e6d6a9af7fbe325e346c}\label{picruise_8c_aa49300b31544e6d6a9af7fbe325e346c}} 
+\index{picruise.c@{picruise.c}!predefinie@{predefinie}}
+\index{predefinie@{predefinie}!picruise.c@{picruise.c}}
+\doxysubsubsection{\texorpdfstring{predefinie()}{predefinie()}}
+{\footnotesize\ttfamily int predefinie (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui réalise la page de sélection des grilles prédéfinies. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}

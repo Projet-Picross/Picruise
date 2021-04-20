@@ -1,0 +1,99 @@
+\hypertarget{solveur__ligne_8c}{}\doxysection{Référence du fichier solveur\+\_\+ligne.\+c}
+\label{solveur__ligne_8c}\index{solveur\_ligne.c@{solveur\_ligne.c}}
+
+
+Solveur permettant de résoudre une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a0240ac851181b84ac374872dc5434ee4}\label{solveur__ligne_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a048a1db04e01ad9b41208c255288f676}\label{solveur__ligne_8c_a048a1db04e01ad9b41208c255288f676}} 
+void {\bfseries affiche\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a059f1b1774a40de1a3c5289ea57b49b9}\label{solveur__ligne_8c_a059f1b1774a40de1a3c5289ea57b49b9}} 
+void {\bfseries init\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a6e69cad3a75849a7e84522feb77fbf3f}\label{solveur__ligne_8c_a6e69cad3a75849a7e84522feb77fbf3f}} 
+void {\bfseries affecter\+\_\+matrice} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a5a81c22e56cfad717533083f5ec947d8}\label{solveur__ligne_8c_a5a81c22e56cfad717533083f5ec947d8}} 
+void {\bfseries generat\+\_\+condi\+\_\+lignes} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+lignes\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_af43b8d7728c14ab0a0241fac536b7ed9}\label{solveur__ligne_8c_af43b8d7728c14ab0a0241fac536b7ed9}} 
+void {\bfseries generat\+\_\+condi\+\_\+colonnes} (int matrice\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+condi\+\_\+colonnes\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a6851be93840a22834ef3d529030b5c69}\label{solveur__ligne_8c_a6851be93840a22834ef3d529030b5c69}} 
+int {\bfseries genera\+\_\+aleatoire} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a2ac6e0ca092aad5a474274fbe23a91e1}\label{solveur__ligne_8c_a2ac6e0ca092aad5a474274fbe23a91e1}} 
+int {\bfseries verif\+\_\+lignes} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_ae8654ff03a800b1ce4af037e3bff8ea6}\label{solveur__ligne_8c_ae8654ff03a800b1ce4af037e3bff8ea6}} 
+int {\bfseries verif\+\_\+colonnes} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a60a0052d2a31d07097f3142bb6fb2534}\label{solveur__ligne_8c_a60a0052d2a31d07097f3142bb6fb2534}} 
+void {\bfseries somme\+\_\+cond\+\_\+l} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int somme\+\_\+cond\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a8646d24d81ac09e9db4d8797942c1f96}\label{solveur__ligne_8c_a8646d24d81ac09e9db4d8797942c1f96}} 
+void {\bfseries remplissage\+\_\+inter} (int mat\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat2\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a0b681f2f5d01d094adb99ea8298b462a}\label{solveur__ligne_8c_a0b681f2f5d01d094adb99ea8298b462a}} 
+int {\bfseries nombre\+\_\+bloc} (int condi\+\_\+ligne\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int ligne)
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_a2dfb216c910df7260bae9a621875f65f}\label{solveur__ligne_8c_a2dfb216c910df7260bae9a621875f65f}} 
+int {\bfseries solve} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int combinaisons\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]})
+\item 
+\mbox{\Hypertarget{solveur__ligne_8c_aa5802d549b05416236bdbf4e9677eb5f}\label{solveur__ligne_8c_aa5802d549b05416236bdbf4e9677eb5f}} 
+void {\bfseries init\+\_\+mat\+\_\+cub} (int combinaisons\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]})
+\item 
+void \mbox{\hyperlink{solveur__ligne_8c_a907ede1e2ed6cd5dd7faf5673077aa3e}{resoudre\+\_\+grille}} (int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+l\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int mat\+\_\+cond\+\_\+c\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int combinaisons\mbox{[}N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]}, int i)
+\begin{DoxyCompactList}\small\item\em Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{solveur__ligne_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{solveur__ligne_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Solveur permettant de résoudre une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{solveur__ligne_8c_a907ede1e2ed6cd5dd7faf5673077aa3e}\label{solveur__ligne_8c_a907ede1e2ed6cd5dd7faf5673077aa3e}} 
+\index{solveur\_ligne.c@{solveur\_ligne.c}!resoudre\_grille@{resoudre\_grille}}
+\index{resoudre\_grille@{resoudre\_grille}!solveur\_ligne.c@{solveur\_ligne.c}}
+\doxysubsubsection{\texorpdfstring{resoudre\_grille()}{resoudre\_grille()}}
+{\footnotesize\ttfamily int resoudre\+\_\+grille (\begin{DoxyParamCaption}\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+cond\+\_\+l\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{mat\+\_\+cond\+\_\+c\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{combinaisons\mbox{[}\+N\mbox{]}\mbox{[}300\mbox{]}\mbox{[}10\mbox{]},  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est la matrice contenant les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est la matrice contenant les conditions des colonnes du picross \\
+\hline
+{\em combi} & est la matrice cubique contenant les solutions possibles pour la résolution du picross \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,137 @@
+\hypertarget{generation_8c}{}\doxysection{Référence du fichier generation.\+c}
+\label{generation_8c}\index{generation.c@{generation.c}}
+
+
+Fonctions réalisant la génération des matrices.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$../src/generation.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{generation_8c_a3982c02d61d10308139c2879a0dcd517}{init\+\_\+matrice}} (int $\ast$matrice, int format)
+\begin{DoxyCompactList}\small\item\em Initialise une matrice avec des 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{generation_8c_a4b187c02ab35f6903e3bee5458730d81}{genera\+\_\+aleatoire}} (int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Remplie une matrice aléatoirement avec des 1 placés aléatoirement. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8c_af736234ac73ceb172e1aa40f157a245a}{affecter\+\_\+matrice\+\_\+predef}} (int $\ast$matrice, int format, char $\ast$fich)
+\begin{DoxyCompactList}\small\item\em Fonction qui lit un fichier et place les cases noires dans la matrice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8c_a74324f1e90375344ae799b96e14bd93e}{generat\+\_\+condi\+\_\+lignes}} (int $\ast$matrice, int $\ast$mat\+\_\+condi\+\_\+lignes, int format)
+\begin{DoxyCompactList}\small\item\em Génération de la matrice des conditions des lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{generation_8c_acdbc54f210706e07450948ad8c157c86}{generat\+\_\+condi\+\_\+colonnes}} (int $\ast$matrice, int $\ast$mat\+\_\+condi\+\_\+colonnes, int format)
+\begin{DoxyCompactList}\small\item\em Génération de la matrice des conditions des colonnes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Fonctions réalisant la génération des matrices. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+18 Avril 2021 
+\end{DoxyDate}
+\begin{DoxyAuthor}{Auteur}
+Mohamed Lemrabott, Julien Mahouin, Gallup Mohamad Jamil, Alexis Nolière 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{generation_8c_af736234ac73ceb172e1aa40f157a245a}\label{generation_8c_af736234ac73ceb172e1aa40f157a245a}} 
+\index{generation.c@{generation.c}!affecter\_matrice\_predef@{affecter\_matrice\_predef}}
+\index{affecter\_matrice\_predef@{affecter\_matrice\_predef}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{affecter\_matrice\_predef()}{affecter\_matrice\_predef()}}
+{\footnotesize\ttfamily void affecter\+\_\+matrice\+\_\+predef (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int}]{format,  }\item[{char $\ast$}]{fich }\end{DoxyParamCaption})}
+
+
+
+Fonction qui lit un fichier et place les cases noires dans la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em fich} & est une chaine de caractère comportant le nom de la matrice prédéfinie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{generation_8c_a4b187c02ab35f6903e3bee5458730d81}\label{generation_8c_a4b187c02ab35f6903e3bee5458730d81}} 
+\index{generation.c@{generation.c}!genera\_aleatoire@{genera\_aleatoire}}
+\index{genera\_aleatoire@{genera\_aleatoire}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{genera\_aleatoire()}{genera\_aleatoire()}}
+{\footnotesize\ttfamily int genera\+\_\+aleatoire (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Remplie une matrice aléatoirement avec des 1 placés aléatoirement. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+cpt un compteur de cases noires 
+\end{DoxyReturn}
+\mbox{\Hypertarget{generation_8c_acdbc54f210706e07450948ad8c157c86}\label{generation_8c_acdbc54f210706e07450948ad8c157c86}} 
+\index{generation.c@{generation.c}!generat\_condi\_colonnes@{generat\_condi\_colonnes}}
+\index{generat\_condi\_colonnes@{generat\_condi\_colonnes}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{generat\_condi\_colonnes()}{generat\_condi\_colonnes()}}
+{\footnotesize\ttfamily void generat\+\_\+condi\+\_\+colonnes (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int $\ast$}]{mat\+\_\+condi\+\_\+colonnes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génération de la matrice des conditions des colonnes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonnes} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{generation_8c_a74324f1e90375344ae799b96e14bd93e}\label{generation_8c_a74324f1e90375344ae799b96e14bd93e}} 
+\index{generation.c@{generation.c}!generat\_condi\_lignes@{generat\_condi\_lignes}}
+\index{generat\_condi\_lignes@{generat\_condi\_lignes}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{generat\_condi\_lignes()}{generat\_condi\_lignes()}}
+{\footnotesize\ttfamily void generat\+\_\+condi\+\_\+lignes (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int $\ast$}]{mat\+\_\+condi\+\_\+lignes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génération de la matrice des conditions des lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+condi\+\_\+lignes} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{generation_8c_a3982c02d61d10308139c2879a0dcd517}\label{generation_8c_a3982c02d61d10308139c2879a0dcd517}} 
+\index{generation.c@{generation.c}!init\_matrice@{init\_matrice}}
+\index{init\_matrice@{init\_matrice}!generation.c@{generation.c}}
+\doxysubsubsection{\texorpdfstring{init\_matrice()}{init\_matrice()}}
+{\footnotesize\ttfamily void init\+\_\+matrice (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Initialise une matrice avec des 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}

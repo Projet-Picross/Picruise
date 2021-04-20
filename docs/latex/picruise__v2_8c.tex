@@ -1,0 +1,536 @@
+\hypertarget{picruise__v2_8c}{}\doxysection{Référence du fichier picruise\+\_\+v2.\+c}
+\label{picruise__v2_8c}\index{picruise\_v2.c@{picruise\_v2.c}}
+
+
+Programme permettant à l\textquotesingle{}utilisateur de jouer à Picruise.  
+
+
+{\ttfamily \#include $<$SDL.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+ttf.\+h$>$}\newline
+{\ttfamily \#include $<$SDL\+\_\+image.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{picruise__v2_8c_ad0121e0ade39fd4d3e67c9da0911e0fc}\label{picruise__v2_8c_ad0121e0ade39fd4d3e67c9da0911e0fc}} 
+int {\bfseries choix\+\_\+type\+\_\+grille} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+\mbox{\Hypertarget{picruise__v2_8c_a45a861a2f40094bb8a20e4549ff96d52}\label{picruise__v2_8c_a45a861a2f40094bb8a20e4549ff96d52}} 
+int {\bfseries accueil} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+int \mbox{\hyperlink{picruise__v2_8c_a079ee38c9d4fc022faac843e82b7e2ef}{choix\+\_\+jeu}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, int format, char $\ast$grille\+\_\+predef)
+\begin{DoxyCompactList}\small\item\em Fonction qui réalise la page de sélection du mode joueur ou solveur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_a8d27f81bae288f9c4e582edb31c86903}{affiche\+\_\+jeu}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Rect $\ast$r, int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int format, int nb\+\_\+max\+\_\+cond\+\_\+lignes, int nb\+\_\+max\+\_\+cond\+\_\+colonnes)
+\begin{DoxyCompactList}\small\item\em Fonction qui produit le rendu final du jeu Picruise. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_a3982c02d61d10308139c2879a0dcd517}{init\+\_\+matrice}} (int $\ast$matrice, int format)
+\begin{DoxyCompactList}\small\item\em Initialise une matrice avec des 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}{verif\+\_\+lignes}} (int $\ast$mat\+\_\+cond, int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Verifie les lignes de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a471e768307d5575087eebaade7040d31}{verif\+\_\+colonnes}} (int $\ast$mat\+\_\+cond, int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Verifie les colonnes de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a4b187c02ab35f6903e3bee5458730d81}{genera\+\_\+aleatoire}} (int $\ast$grille, int format)
+\begin{DoxyCompactList}\small\item\em Remplie une matrice aléatoirement avec des 0 et des 1. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_af736234ac73ceb172e1aa40f157a245a}{affecter\+\_\+matrice\+\_\+predef}} (int $\ast$matrice, int format, char $\ast$fich)
+\begin{DoxyCompactList}\small\item\em Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_a74324f1e90375344ae799b96e14bd93e}{generat\+\_\+condi\+\_\+lignes}} (int $\ast$matrice, int $\ast$mat\+\_\+condi\+\_\+lignes, int format)
+\begin{DoxyCompactList}\small\item\em Génération de la matrice des conditions des lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_acdbc54f210706e07450948ad8c157c86}{generat\+\_\+condi\+\_\+colonnes}} (int $\ast$matrice, int $\ast$mat\+\_\+condi\+\_\+colonnes, int format)
+\begin{DoxyCompactList}\small\item\em Génération de la matrice des conditions des colonnes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_a4567a89fb4eeb292041acacba9959639}{somme\+\_\+cond\+\_\+l}} (int $\ast$mat\+\_\+cond, int $\ast$somme\+\_\+cond, int format)
+\begin{DoxyCompactList}\small\item\em Remplie un tableau avec la somme de chaque lignes de la matrice condition. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{picruise__v2_8c_aace37d6c86dcf9971353c8a8c877d346}{remplissage\+\_\+inter}} (int $\ast$mat, int $\ast$mat2, int format)
+\begin{DoxyCompactList}\small\item\em Copie la première matrice dans la deuxième et complète les vides avec des 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}{nombre\+\_\+bloc}} (int $\ast$condi\+\_\+ligne, int ligne, int format)
+\begin{DoxyCompactList}\small\item\em Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a64866b5b6811b41dbcfac3f235fb1fd3}{solve}} (int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int $\ast$combinaisons, int format)
+\begin{DoxyCompactList}\small\item\em Génère des solutions possibles pour la résolution du picross. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}{resoudre\+\_\+grille}} (int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int $\ast$combinaisons, int i, int format)
+\begin{DoxyCompactList}\small\item\em Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise__v2_8c_a650345561d9bf76dfb29f37d626251c6}\label{picruise__v2_8c_a650345561d9bf76dfb29f37d626251c6}} 
+int {\bfseries init\+\_\+mat\+\_\+cub} (int $\ast$combinaisons, int format)
+\item 
+int \mbox{\hyperlink{picruise__v2_8c_ada92a6620a64b7ff7594eace9baa1410}{solveur}} (int $\ast$grille, int $\ast$\mbox{\hyperlink{picruise__v2_8c_aa6925accc3b2009a45f13557bc7d8f7f}{jeu}}, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int format)
+\begin{DoxyCompactList}\small\item\em Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_a2db4123c03ab72cb840c74fe18032568}{pause}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, SDL\+\_\+\+Rect $\ast$r, int $\ast$grille, int $\ast$mat\+\_\+cond\+\_\+l, int $\ast$mat\+\_\+cond\+\_\+c, int nb\+\_\+max\+\_\+cond\+\_\+lignes, int nb\+\_\+max\+\_\+cond\+\_\+colonnes, int format)
+\begin{DoxyCompactList}\small\item\em Fonction réalise la phase d\textquotesingle{}intéraction du joueur sur le jeu Picruise. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_aa72d59a0f7935c53d168ff81ebe5c820}{nb\+\_\+max\+\_\+cond}} (int $\ast$mat\+\_\+cond, int format)
+\begin{DoxyCompactList}\small\item\em Calcul le nombre maximum de conditions de la matrice. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{picruise__v2_8c_aa6925accc3b2009a45f13557bc7d8f7f}{jeu}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer, int format, char $\ast$grille\+\_\+predef, int joueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise__v2_8c_a459c053195a9f162666a5d5b83f78c1e}\label{picruise__v2_8c_a459c053195a9f162666a5d5b83f78c1e}} 
+int {\bfseries choix\+\_\+format} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+\mbox{\Hypertarget{picruise__v2_8c_aa49300b31544e6d6a9af7fbe325e346c}\label{picruise__v2_8c_aa49300b31544e6d6a9af7fbe325e346c}} 
+int {\bfseries predefinie} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\item 
+int \mbox{\hyperlink{picruise__v2_8c_a3b4f8a50464bac13fba710d3dc4c5426}{options}} (SDL\+\_\+\+Window $\ast$window, SDL\+\_\+\+Renderer $\ast$renderer)
+\begin{DoxyCompactList}\small\item\em Fonction qui permet à l\textquotesingle{}utilisateur de choisir les dimensions de l\textquotesingle{}ecran de jeu. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise__v2_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{picruise__v2_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+int {\bfseries main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{picruise__v2_8c_a599adbe412c60e0cc5abb86be7ee4507}\label{picruise__v2_8c_a599adbe412c60e0cc5abb86be7ee4507}} 
+int \mbox{\hyperlink{picruise__v2_8c_a599adbe412c60e0cc5abb86be7ee4507}{SCREEN\+\_\+\+WIDTH}} = 1366
+\begin{DoxyCompactList}\small\item\em int SCREEN\+\_\+\+WIDTH est une constante correspondant à la largeur de la fenêtre en pixel int SCREEN\+\_\+\+HEIGHT est une constante correspondant à la hauteur de la fenêtre en pixel \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise__v2_8c_af1c710caf1e3a9e81829078054e83799}\label{picruise__v2_8c_af1c710caf1e3a9e81829078054e83799}} 
+int {\bfseries SCREEN\+\_\+\+HEIGHT} = 768
+\item 
+\mbox{\Hypertarget{picruise__v2_8c_aa4d434a8b93410ea0ed660e48dac41c6}\label{picruise__v2_8c_aa4d434a8b93410ea0ed660e48dac41c6}} 
+int \mbox{\hyperlink{picruise__v2_8c_aa4d434a8b93410ea0ed660e48dac41c6}{screen\+\_\+width}} = 1366
+\begin{DoxyCompactList}\small\item\em Variables de dimensions de l\textquotesingle{}écran int screen\+\_\+width est une constante correspondant à la largeur de la fenêtre en pixel int screen\+\_\+height est une constante correspondant à la hauteur de la fenêtre en pixel. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{picruise__v2_8c_a3b4a1bd850991355b91c7bfc15247d49}\label{picruise__v2_8c_a3b4a1bd850991355b91c7bfc15247d49}} 
+int {\bfseries screen\+\_\+height} = 768
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Programme permettant à l\textquotesingle{}utilisateur de jouer à Picruise. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+14 Avril 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{picruise__v2_8c_af736234ac73ceb172e1aa40f157a245a}\label{picruise__v2_8c_af736234ac73ceb172e1aa40f157a245a}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!affecter\_matrice\_predef@{affecter\_matrice\_predef}}
+\index{affecter\_matrice\_predef@{affecter\_matrice\_predef}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{affecter\_matrice\_predef()}{affecter\_matrice\_predef()}}
+{\footnotesize\ttfamily void affecter\+\_\+matrice\+\_\+predef (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int}]{format,  }\item[{char $\ast$}]{fich }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em fich} & est une chaine de caractère comportant le nom de la matrice prédéfinie \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a8d27f81bae288f9c4e582edb31c86903}\label{picruise__v2_8c_a8d27f81bae288f9c4e582edb31c86903}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!affiche\_jeu@{affiche\_jeu}}
+\index{affiche\_jeu@{affiche\_jeu}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{affiche\_jeu()}{affiche\_jeu()}}
+{\footnotesize\ttfamily void affiche\+\_\+jeu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Rect $\ast$}]{r,  }\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{format,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+lignes,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+colonnes }\end{DoxyParamCaption})}
+
+
+
+Fonction qui produit le rendu final du jeu Picruise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em r} & représente un ensemble de cases, formant une grille, avec lesquelles le joueur peut intéragir \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+lignes} & est le nombre maximale de condition qu\textquotesingle{}une ligne du picross puisse obtenir \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+colonnes} & est le nombre maximale de condition qu\textquotesingle{}une colonne du picross puisse obtenir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+une variable utilisée pour perpétuer la boucle d\textquotesingle{}intéraction, sa valeur sera 0 quand on arretera le jeu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a079ee38c9d4fc022faac843e82b7e2ef}\label{picruise__v2_8c_a079ee38c9d4fc022faac843e82b7e2ef}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!choix\_jeu@{choix\_jeu}}
+\index{choix\_jeu@{choix\_jeu}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{choix\_jeu()}{choix\_jeu()}}
+{\footnotesize\ttfamily int choix\+\_\+jeu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{format,  }\item[{char $\ast$}]{grille\+\_\+predef }\end{DoxyParamCaption})}
+
+
+
+Fonction qui réalise la page de sélection du mode joueur ou solveur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em grille\+\_\+predef} & est une chaine de caractère comportant le nom de la matrice prédéfinie \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a4b187c02ab35f6903e3bee5458730d81}\label{picruise__v2_8c_a4b187c02ab35f6903e3bee5458730d81}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!genera\_aleatoire@{genera\_aleatoire}}
+\index{genera\_aleatoire@{genera\_aleatoire}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{genera\_aleatoire()}{genera\_aleatoire()}}
+{\footnotesize\ttfamily int genera\+\_\+aleatoire (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Remplie une matrice aléatoirement avec des 0 et des 1. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+cpt un compteur de cases noires 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_acdbc54f210706e07450948ad8c157c86}\label{picruise__v2_8c_acdbc54f210706e07450948ad8c157c86}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!generat\_condi\_colonnes@{generat\_condi\_colonnes}}
+\index{generat\_condi\_colonnes@{generat\_condi\_colonnes}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{generat\_condi\_colonnes()}{generat\_condi\_colonnes()}}
+{\footnotesize\ttfamily void generat\+\_\+condi\+\_\+colonnes (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int $\ast$}]{mat\+\_\+condi\+\_\+colonnes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génération de la matrice des conditions des colonnes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+condi\+\_\+colonnes} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a74324f1e90375344ae799b96e14bd93e}\label{picruise__v2_8c_a74324f1e90375344ae799b96e14bd93e}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!generat\_condi\_lignes@{generat\_condi\_lignes}}
+\index{generat\_condi\_lignes@{generat\_condi\_lignes}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{generat\_condi\_lignes()}{generat\_condi\_lignes()}}
+{\footnotesize\ttfamily void generat\+\_\+condi\+\_\+lignes (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int $\ast$}]{mat\+\_\+condi\+\_\+lignes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génération de la matrice des conditions des lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+condi\+\_\+lignes} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a3982c02d61d10308139c2879a0dcd517}\label{picruise__v2_8c_a3982c02d61d10308139c2879a0dcd517}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!init\_matrice@{init\_matrice}}
+\index{init\_matrice@{init\_matrice}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{init\_matrice()}{init\_matrice()}}
+{\footnotesize\ttfamily void init\+\_\+matrice (\begin{DoxyParamCaption}\item[{int $\ast$}]{matrice,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Initialise une matrice avec des 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em matrice} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_aa6925accc3b2009a45f13557bc7d8f7f}\label{picruise__v2_8c_aa6925accc3b2009a45f13557bc7d8f7f}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!jeu@{jeu}}
+\index{jeu@{jeu}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{jeu()}{jeu()}}
+{\footnotesize\ttfamily int jeu (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{int}]{format,  }\item[{char $\ast$}]{grille\+\_\+predef,  }\item[{int}]{joueur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui démarre un picross aléatoire ou prédéfinis selon le choix du joueur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+{\em grille\+\_\+predef} & est une chaine de caractère comportant le nom de la matrice prédéfinie \\
+\hline
+{\em joueur} & représente le mode de jeu choisit par le joueur \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_aa72d59a0f7935c53d168ff81ebe5c820}\label{picruise__v2_8c_aa72d59a0f7935c53d168ff81ebe5c820}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!nb\_max\_cond@{nb\_max\_cond}}
+\index{nb\_max\_cond@{nb\_max\_cond}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{nb\_max\_cond()}{nb\_max\_cond()}}
+{\footnotesize\ttfamily int nb\+\_\+max\+\_\+cond (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Calcul le nombre maximum de conditions de la matrice. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nb\+\_\+max\+\_\+cond un entier représentant le nombre maximal de condition qu\textquotesingle{}une matrice peut posséder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}\label{picruise__v2_8c_a5ec9e1565622ea0bc2e125dc125fbfb1}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!nombre\_bloc@{nombre\_bloc}}
+\index{nombre\_bloc@{nombre\_bloc}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{nombre\_bloc()}{nombre\_bloc()}}
+{\footnotesize\ttfamily int nombre\+\_\+bloc (\begin{DoxyParamCaption}\item[{int $\ast$}]{condi\+\_\+ligne,  }\item[{int}]{ligne,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction qui compte le nombre de bloc present sur une ligne précise de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em condi\+\_\+ligne} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em ligne} & est un indice indiquant la ligne à utiliser \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+un entier représentant le nombre de bloc sur la ligne concernée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a3b4f8a50464bac13fba710d3dc4c5426}\label{picruise__v2_8c_a3b4f8a50464bac13fba710d3dc4c5426}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!options@{options}}
+\index{options@{options}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{options()}{options()}}
+{\footnotesize\ttfamily int options (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer }\end{DoxyParamCaption})}
+
+
+
+Fonction qui permet à l\textquotesingle{}utilisateur de choisir les dimensions de l\textquotesingle{}ecran de jeu. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+0 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a2db4123c03ab72cb840c74fe18032568}\label{picruise__v2_8c_a2db4123c03ab72cb840c74fe18032568}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!pause@{pause}}
+\index{pause@{pause}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily int pause (\begin{DoxyParamCaption}\item[{SDL\+\_\+\+Window $\ast$}]{window,  }\item[{SDL\+\_\+\+Renderer $\ast$}]{renderer,  }\item[{SDL\+\_\+\+Rect $\ast$}]{r,  }\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+lignes,  }\item[{int}]{nb\+\_\+max\+\_\+cond\+\_\+colonnes,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction réalise la phase d\textquotesingle{}intéraction du joueur sur le jeu Picruise. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em window} & est une fenêtre générée avec SDL dans laquelle se déroulera l\textquotesingle{}affichage du jeu Picruise \\
+\hline
+{\em renderer} & est le moteur de rendu de la fenêtre, l\textquotesingle{}espace où nous allons pouvoir faire notre affichage \\
+\hline
+{\em r} & représente un ensemble de cases, formant une grille, avec lesquelles le joueur peut intéragir \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+lignes} & est le nombre maximale de condition qu\textquotesingle{}une ligne du picross puisse obtenir \\
+\hline
+{\em nb\+\_\+max\+\_\+cond\+\_\+colonnes} & est le nombre maximale de condition qu\textquotesingle{}une colonne du picross puisse obtenir \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+une variable utilisée pour perpétuer la boucle d\textquotesingle{}intéraction, sa valeur sera 0 quand on arretera le jeu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_aace37d6c86dcf9971353c8a8c877d346}\label{picruise__v2_8c_aace37d6c86dcf9971353c8a8c877d346}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!remplissage\_inter@{remplissage\_inter}}
+\index{remplissage\_inter@{remplissage\_inter}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{remplissage\_inter()}{remplissage\_inter()}}
+{\footnotesize\ttfamily void remplissage\+\_\+inter (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat,  }\item[{int $\ast$}]{mat2,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Copie la première matrice dans la deuxième et complète les vides avec des 0. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em mat2} & est un pointeur d\textquotesingle{}entier et sera la copie de mat mais pointant sur des 0 quand il y a des vides (elle complete mat) \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}\label{picruise__v2_8c_a03d536d5d6f444dcbc6d9ae90d4b9ec6}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!resoudre\_grille@{resoudre\_grille}}
+\index{resoudre\_grille@{resoudre\_grille}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{resoudre\_grille()}{resoudre\_grille()}}
+{\footnotesize\ttfamily int resoudre\+\_\+grille (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int $\ast$}]{combinaisons,  }\item[{int}]{i,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Combine les différentes lignes, générées précédamment et stockées dans la matrice cubique, et teste celles-\/ci afin de trouver la combinaison gagnante. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em combinaisons} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la matrice cubique \\
+\hline
+{\em i} & est un entier indique la ligne de la matrice à traiter \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a64866b5b6811b41dbcfac3f235fb1fd3}\label{picruise__v2_8c_a64866b5b6811b41dbcfac3f235fb1fd3}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!solve@{solve}}
+\index{solve@{solve}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{solve()}{solve()}}
+{\footnotesize\ttfamily int solve (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int $\ast$}]{combinaisons,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Génère des solutions possibles pour la résolution du picross. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em combinaisons} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la matrice cubique \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 quand la fonction est terminée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_ada92a6620a64b7ff7594eace9baa1410}\label{picruise__v2_8c_ada92a6620a64b7ff7594eace9baa1410}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!solveur@{solveur}}
+\index{solveur@{solveur}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{solveur()}{solveur()}}
+{\footnotesize\ttfamily int solveur (\begin{DoxyParamCaption}\item[{int $\ast$}]{grille,  }\item[{int $\ast$}]{jeu,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+l,  }\item[{int $\ast$}]{mat\+\_\+cond\+\_\+c,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Fonction qui appelle résoud une grille de picross à partir de plusieurs autres fonctions. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em jeu} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases d\textquotesingle{}une grille dont on effectuera des modifications \\
+\hline
+{\em mat\+\_\+cond\+\_\+l} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des lignes du picross \\
+\hline
+{\em mat\+\_\+cond\+\_\+c} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions des colonnes du picross \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est résolue, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a4567a89fb4eeb292041acacba9959639}\label{picruise__v2_8c_a4567a89fb4eeb292041acacba9959639}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!somme\_cond\_l@{somme\_cond\_l}}
+\index{somme\_cond\_l@{somme\_cond\_l}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{somme\_cond\_l()}{somme\_cond\_l()}}
+{\footnotesize\ttfamily void somme\+\_\+cond\+\_\+l (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{somme\+\_\+cond,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Remplie un tableau avec la somme de chaque lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em somme\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les sommes des conditions des lignes \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{picruise__v2_8c_a471e768307d5575087eebaade7040d31}\label{picruise__v2_8c_a471e768307d5575087eebaade7040d31}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!verif\_colonnes@{verif\_colonnes}}
+\index{verif\_colonnes@{verif\_colonnes}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{verif\_colonnes()}{verif\_colonnes()}}
+{\footnotesize\ttfamily int verif\+\_\+colonnes (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Verifie les colonnes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}
+\mbox{\Hypertarget{picruise__v2_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}\label{picruise__v2_8c_a01ddcf3a82c5e5fb21abf60f24f7d8c1}} 
+\index{picruise\_v2.c@{picruise\_v2.c}!verif\_lignes@{verif\_lignes}}
+\index{verif\_lignes@{verif\_lignes}!picruise\_v2.c@{picruise\_v2.c}}
+\doxysubsubsection{\texorpdfstring{verif\_lignes()}{verif\_lignes()}}
+{\footnotesize\ttfamily int verif\+\_\+lignes (\begin{DoxyParamCaption}\item[{int $\ast$}]{mat\+\_\+cond,  }\item[{int $\ast$}]{grille,  }\item[{int}]{format }\end{DoxyParamCaption})}
+
+
+
+Verifie les lignes de la matrice condition. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est un pointeur d\textquotesingle{}entier qui pointe sur les conditions du picross \\
+\hline
+{\em grille} & est un pointeur d\textquotesingle{}entier qui pointe sur les cases de la grille du joueur \\
+\hline
+{\em format} & représente la taille de la matrice \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la grille est correct, 0 sinon 
+\end{DoxyReturn}

@@ -1,0 +1,218 @@
+\hypertarget{remp__evid_8c}{}\doxysection{Référence du fichier remp\+\_\+evid.\+c}
+\label{remp__evid_8c}\index{remp\_evid.c@{remp\_evid.c}}
+
+
+Ensemble de fonctions qui détectent des cas simples de resolution d\textquotesingle{}une grille de picross.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{remp__evid_8c_a0240ac851181b84ac374872dc5434ee4}\label{remp__evid_8c_a0240ac851181b84ac374872dc5434ee4}} 
+\#define {\bfseries N}~15
+\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{remp__evid_8c_acc7d33dc29a0d01610bd0c1ed6259c0b}{remp\+\_\+intermediaires\+\_\+l}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{remp__evid_8c_a13b50d04e0693ea456fefad7f4298910}{remp\+\_\+intermediaires\+\_\+c}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{remp__evid_8c_a8b4fc35d3fec14fa1894901e6d6dfdb2}{remp\+\_\+derniere\+\_\+cond\+\_\+l}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{remp__evid_8c_a01b3d9c2aef757da969ea029cea939cc}{remp\+\_\+derniere\+\_\+cond\+\_\+c}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les colonnes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{remp__evid_8c_a81d4863b05d8f7d93f073c7c1957dc1b}{remp\+\_\+blanc\+\_\+noire\+\_\+l}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires selon la présence de cases blanches sur les lignes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{remp__evid_8c_a654bcb2402c4eac4047dffb0ad517291}{remp\+\_\+blanc\+\_\+noire\+\_\+c}} (int mat\+\_\+cond\mbox{[}N\mbox{]}\mbox{[}N\mbox{]}, int grille\mbox{[}N\mbox{]}\mbox{[}N\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires selon la présence de cases blanches sur les colonnes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions qui détectent des cas simples de resolution d\textquotesingle{}une grille de picross. 
+
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+5 Mars 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{remp__evid_8c_a654bcb2402c4eac4047dffb0ad517291}\label{remp__evid_8c_a654bcb2402c4eac4047dffb0ad517291}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_blanc\_noire\_c@{remp\_blanc\_noire\_c}}
+\index{remp\_blanc\_noire\_c@{remp\_blanc\_noire\_c}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_blanc\_noire\_c()}{remp\_blanc\_noire\_c()}}
+{\footnotesize\ttfamily int remp\+\_\+blanc\+\_\+noire\+\_\+c (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires selon la présence de cases blanches sur les colonnes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires. \mbox{\Hypertarget{remp__evid_8c_a81d4863b05d8f7d93f073c7c1957dc1b}\label{remp__evid_8c_a81d4863b05d8f7d93f073c7c1957dc1b}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_blanc\_noire\_l@{remp\_blanc\_noire\_l}}
+\index{remp\_blanc\_noire\_l@{remp\_blanc\_noire\_l}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_blanc\_noire\_l()}{remp\_blanc\_noire\_l()}}
+{\footnotesize\ttfamily int remp\+\_\+blanc\+\_\+noire\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires selon la présence de cases blanches sur les lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si la case est noire, que les deux cases précédentes existent et sont respectivement blanche et noire et que la condition précedante est rempli, alors les cases suivantes sont forcément noires. \mbox{\Hypertarget{remp__evid_8c_a01b3d9c2aef757da969ea029cea939cc}\label{remp__evid_8c_a01b3d9c2aef757da969ea029cea939cc}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_derniere\_cond\_c@{remp\_derniere\_cond\_c}}
+\index{remp\_derniere\_cond\_c@{remp\_derniere\_cond\_c}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_derniere\_cond\_c()}{remp\_derniere\_cond\_c()}}
+{\footnotesize\ttfamily int remp\+\_\+derniere\+\_\+cond\+\_\+c (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les colonnes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si la dernière condition se termine à l\textquotesingle{}extremite de la matrice et que l\textquotesingle{}on a une une case noircie, on remplie les cases intermédiaires. Pour les colonnes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si la dernière condition se termine à l\textquotesingle{}extremite de la matrice et que l\textquotesingle{}on a une une case noircie, on remplie les cases intermédiaires. Pour les colonnes. \mbox{\Hypertarget{remp__evid_8c_a8b4fc35d3fec14fa1894901e6d6dfdb2}\label{remp__evid_8c_a8b4fc35d3fec14fa1894901e6d6dfdb2}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_derniere\_cond\_l@{remp\_derniere\_cond\_l}}
+\index{remp\_derniere\_cond\_l@{remp\_derniere\_cond\_l}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_derniere\_cond\_l()}{remp\_derniere\_cond\_l()}}
+{\footnotesize\ttfamily int remp\+\_\+derniere\+\_\+cond\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si la dernière condition se termine à l\textquotesingle{}extremite de la matrice et que l\textquotesingle{}on a une une case noircie, on remplie les cases intermédiaires. Pour les lignes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si la dernière condition se termine à l\textquotesingle{}extremite de la matrice et que l\textquotesingle{}on a une une case noircie, on remplie les cases intermédiaires. Pour les lignes. \mbox{\Hypertarget{remp__evid_8c_a13b50d04e0693ea456fefad7f4298910}\label{remp__evid_8c_a13b50d04e0693ea456fefad7f4298910}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_intermediaires\_c@{remp\_intermediaires\_c}}
+\index{remp\_intermediaires\_c@{remp\_intermediaires\_c}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_intermediaires\_c()}{remp\_intermediaires\_c()}}
+{\footnotesize\ttfamily int remp\+\_\+intermediaires\+\_\+c (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si il n\textquotesingle{}y a qu\textquotesingle{}une seule condition et deux cases noircies non voisines l\textquotesingle{}une de l\textquotesingle{}autre, remplir les cases intermédiaires. Pour les colonnes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si il n\textquotesingle{}y a qu\textquotesingle{}une seule condition et deux cases noircies non voisines l\textquotesingle{}une de l\textquotesingle{}autre, remplir les cases intermédiaires. Pour les colonnes. \mbox{\Hypertarget{remp__evid_8c_acc7d33dc29a0d01610bd0c1ed6259c0b}\label{remp__evid_8c_acc7d33dc29a0d01610bd0c1ed6259c0b}} 
+\index{remp\_evid.c@{remp\_evid.c}!remp\_intermediaires\_l@{remp\_intermediaires\_l}}
+\index{remp\_intermediaires\_l@{remp\_intermediaires\_l}!remp\_evid.c@{remp\_evid.c}}
+\doxysubsubsection{\texorpdfstring{remp\_intermediaires\_l()}{remp\_intermediaires\_l()}}
+{\footnotesize\ttfamily int remp\+\_\+intermediaires\+\_\+l (\begin{DoxyParamCaption}\item[{int}]{mat\+\_\+cond\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]},  }\item[{int}]{grille\mbox{[}\+N\mbox{]}\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui complete le remplissage d\textquotesingle{}un bloc de cases noires sur les lignes. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche)\\
+\hline
+\end{DoxyParams}
+Si il n\textquotesingle{}y a qu\textquotesingle{}une seule condition et deux cases noircies non voisines l\textquotesingle{}une de l\textquotesingle{}autre, remplir les cases intermédiaires. Pour les lignes.
+
+
+\begin{DoxyParams}{Paramètres}
+{\em mat\+\_\+cond} & est une matrice contenant les conditions à appliquer sur la deuxième matrice passée en paramètre \\
+\hline
+{\em grille} & est une matrice contenant des 0 ou des 1 (1 = case noire $\vert$ 0 = case blanche) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 si la matrice à été modifiée, 0 sinon
+\end{DoxyReturn}
+Si il n\textquotesingle{}y a qu\textquotesingle{}une seule condition et deux cases noircies non voisines l\textquotesingle{}une de l\textquotesingle{}autre, remplir les cases intermédiaires. Pour les lignes. 

@@ -1,0 +1,182 @@
+\hypertarget{grille__predef_8c}{}\doxysection{Référence du fichier grille\+\_\+predef.\+c}
+\label{grille__predef_8c}\index{grille\_predef.c@{grille\_predef.c}}
+
+
+Ensemble de fonctions servant à l\textquotesingle{}affichage des matrices ainsi qu\textquotesingle{}un petit menu.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Fonctions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{grille__predef_8c_aab9eac84a6f717b9342a7eb15ce177ad}{init\+\_\+matrice\+\_\+predef}} (int n, int matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]})
+\begin{DoxyCompactList}\small\item\em Le fichier contenant les matrices prédéfinies est de la forme \+: \# nom\+\_\+matrice -\/ taille\+\_\+matrice -\/ puis suite de coordonnées des points. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grille__predef_8c_a14a5bf4e2174a9aebd013ca62d2e13c0}{affiche\+\_\+matrice\+\_\+predef}} (int n, int matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]})
+\begin{DoxyCompactList}\small\item\em Affiche la matrice passée en paramètre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grille__predef_8c_ac3ee5c674c17ebcc160de655dabcdf08}{affecter\+\_\+matrice\+\_\+predef}} (int n, int matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]})
+\begin{DoxyCompactList}\small\item\em Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{grille__predef_8c_af4a5c26f3b695bc79b1e93770c3a08e8}{transfert\+\_\+mat}} (int marqueur)
+\begin{DoxyCompactList}\small\item\em Fonction qui récupère une matrice précise parmi celles du fichier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__predef_8c_a4787a41a764e4bbed39e39b920986f99}{nb\+\_\+matrice}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui compte le nombre de matrices présentes dans le fichier. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{grille__predef_8c_a141611376620a6be6e34aabac99af4c3}\label{grille__predef_8c_a141611376620a6be6e34aabac99af4c3}} 
+void \mbox{\hyperlink{grille__predef_8c_a141611376620a6be6e34aabac99af4c3}{liste\+\_\+matrice}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui affiche le choix des matrices possibles pour l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__predef_8c_a962d6ce334108b337ce4f523ba072d63}{taille\+\_\+mat\+\_\+choix}} (int choix)
+\begin{DoxyCompactList}\small\item\em Fonction qui récupère la taille de la matrice voulue dans le fichier. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__predef_8c_ad5d471e6822b17219d89a60ef21f960e}{choix\+\_\+matrice}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui récupère le numéro de la matrice voulue par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{grille__predef_8c_a520f64eef24d4bdf540a062edbcbae02}{matrice\+\_\+random}} ()
+\begin{DoxyCompactList}\small\item\em Fonction qui retourne un entier aléatoire allant de 1 jusqu\textquotesingle{}au nombre de matrice. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{grille__predef_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{grille__predef_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+int {\bfseries main} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{grille__predef_8c_a8c69f8b51c06c11110b56707f6e194b9}\label{grille__predef_8c_a8c69f8b51c06c11110b56707f6e194b9}} 
+FILE $\ast$ \mbox{\hyperlink{grille__predef_8c_a8c69f8b51c06c11110b56707f6e194b9}{fichier}}
+\begin{DoxyCompactList}\small\item\em Fichiers de sauvegardes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{grille__predef_8c_a1fcf53d02f7701c8f476c48cf8870217}\label{grille__predef_8c_a1fcf53d02f7701c8f476c48cf8870217}} 
+FILE $\ast$ \mbox{\hyperlink{grille__predef_8c_a1fcf53d02f7701c8f476c48cf8870217}{fichier2}}
+\begin{DoxyCompactList}\small\item\em Fichiers de sauvegardes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+Ensemble de fonctions servant à l\textquotesingle{}affichage des matrices ainsi qu\textquotesingle{}un petit menu. 
+
+\begin{DoxyVersion}{Version}
+1.\+3 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+17 Février 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentation des fonctions}
+\mbox{\Hypertarget{grille__predef_8c_ac3ee5c674c17ebcc160de655dabcdf08}\label{grille__predef_8c_ac3ee5c674c17ebcc160de655dabcdf08}} 
+\index{grille\_predef.c@{grille\_predef.c}!affecter\_matrice\_predef@{affecter\_matrice\_predef}}
+\index{affecter\_matrice\_predef@{affecter\_matrice\_predef}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{affecter\_matrice\_predef()}{affecter\_matrice\_predef()}}
+{\footnotesize\ttfamily void affecter\+\_\+matrice\+\_\+predef (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Fonction qui remplie la matrice passée en paramètre via une seconde située dans un fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & est un entier indiquant la taille de la matrice à remplir \\
+\hline
+{\em matrice} & est la matrice à remplir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__predef_8c_a14a5bf4e2174a9aebd013ca62d2e13c0}\label{grille__predef_8c_a14a5bf4e2174a9aebd013ca62d2e13c0}} 
+\index{grille\_predef.c@{grille\_predef.c}!affiche\_matrice\_predef@{affiche\_matrice\_predef}}
+\index{affiche\_matrice\_predef@{affiche\_matrice\_predef}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{affiche\_matrice\_predef()}{affiche\_matrice\_predef()}}
+{\footnotesize\ttfamily void affiche\+\_\+matrice\+\_\+predef (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Affiche la matrice passée en paramètre. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em n} & est un entier indiquant la taille de la matrice à afficher \\
+\hline
+{\em matrice} & est la matrice à afficher \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__predef_8c_ad5d471e6822b17219d89a60ef21f960e}\label{grille__predef_8c_ad5d471e6822b17219d89a60ef21f960e}} 
+\index{grille\_predef.c@{grille\_predef.c}!choix\_matrice@{choix\_matrice}}
+\index{choix\_matrice@{choix\_matrice}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{choix\_matrice()}{choix\_matrice()}}
+{\footnotesize\ttfamily int choix\+\_\+matrice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui récupère le numéro de la matrice voulue par l\textquotesingle{}utilisateur. 
+
+\begin{DoxyReturn}{Renvoie}
+t un entier représentant le numéro de la matrice voulue par l\textquotesingle{}utilisateur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__predef_8c_aab9eac84a6f717b9342a7eb15ce177ad}\label{grille__predef_8c_aab9eac84a6f717b9342a7eb15ce177ad}} 
+\index{grille\_predef.c@{grille\_predef.c}!init\_matrice\_predef@{init\_matrice\_predef}}
+\index{init\_matrice\_predef@{init\_matrice\_predef}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{init\_matrice\_predef()}{init\_matrice\_predef()}}
+{\footnotesize\ttfamily void init\+\_\+matrice\+\_\+predef (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{matrice\mbox{[}n\mbox{]}\mbox{[}n\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Le fichier contenant les matrices prédéfinies est de la forme \+: \# nom\+\_\+matrice -\/ taille\+\_\+matrice -\/ puis suite de coordonnées des points. 
+
+Initialise la matrice passée en paramètre avec des 0 
+\begin{DoxyParams}{Paramètres}
+{\em n} & est un entier indiquant la taille de la matrice à initialiser \\
+\hline
+{\em matrice} & est la matrice à initialiser \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{grille__predef_8c_a520f64eef24d4bdf540a062edbcbae02}\label{grille__predef_8c_a520f64eef24d4bdf540a062edbcbae02}} 
+\index{grille\_predef.c@{grille\_predef.c}!matrice\_random@{matrice\_random}}
+\index{matrice\_random@{matrice\_random}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{matrice\_random()}{matrice\_random()}}
+{\footnotesize\ttfamily int matrice\+\_\+random (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui retourne un entier aléatoire allant de 1 jusqu\textquotesingle{}au nombre de matrice. 
+
+\begin{DoxyReturn}{Renvoie}
+t un entier représentant le numéro de la matrice 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__predef_8c_a4787a41a764e4bbed39e39b920986f99}\label{grille__predef_8c_a4787a41a764e4bbed39e39b920986f99}} 
+\index{grille\_predef.c@{grille\_predef.c}!nb\_matrice@{nb\_matrice}}
+\index{nb\_matrice@{nb\_matrice}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{nb\_matrice()}{nb\_matrice()}}
+{\footnotesize\ttfamily int nb\+\_\+matrice (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Fonction qui compte le nombre de matrices présentes dans le fichier. 
+
+\begin{DoxyReturn}{Renvoie}
+nb un entier 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__predef_8c_a962d6ce334108b337ce4f523ba072d63}\label{grille__predef_8c_a962d6ce334108b337ce4f523ba072d63}} 
+\index{grille\_predef.c@{grille\_predef.c}!taille\_mat\_choix@{taille\_mat\_choix}}
+\index{taille\_mat\_choix@{taille\_mat\_choix}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{taille\_mat\_choix()}{taille\_mat\_choix()}}
+{\footnotesize\ttfamily int taille\+\_\+mat\+\_\+choix (\begin{DoxyParamCaption}\item[{int}]{choix }\end{DoxyParamCaption})}
+
+
+
+Fonction qui récupère la taille de la matrice voulue dans le fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em choix} & est un entier indiquant le numéro de la matrice dont on souhaite récupérer la taille \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+nb un entier représentant la taille de matrice voulue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{grille__predef_8c_af4a5c26f3b695bc79b1e93770c3a08e8}\label{grille__predef_8c_af4a5c26f3b695bc79b1e93770c3a08e8}} 
+\index{grille\_predef.c@{grille\_predef.c}!transfert\_mat@{transfert\_mat}}
+\index{transfert\_mat@{transfert\_mat}!grille\_predef.c@{grille\_predef.c}}
+\doxysubsubsection{\texorpdfstring{transfert\_mat()}{transfert\_mat()}}
+{\footnotesize\ttfamily void transfert\+\_\+mat (\begin{DoxyParamCaption}\item[{int}]{marqueur }\end{DoxyParamCaption})}
+
+
+
+Fonction qui récupère une matrice précise parmi celles du fichier. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em marqueur} & est un entier indiquant le numéro de la matrice à récupérer \\
+\hline
+\end{DoxyParams}
