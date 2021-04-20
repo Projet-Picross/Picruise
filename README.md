@@ -7,4 +7,4 @@ Notez que le solveur est très lent pour certaines matrices. Nous vons conseillo
 De plus, changer les dimensions de la fenêtre dans les options fera crasher le bouton quittter.
 
 
-Vous trouverez dans docs/Macro-plannings et Rapport une copie des micro-plannings ainsi que du rapport du Projet, le Gantt chart étant inclut dans ce dernier.
+Vous trouverez dans docs/Macro-plannings et Rapport une copie des micro-plannings ainsi que du rapport du projet, le Gantt chart étant inclus dans ce dernier.
