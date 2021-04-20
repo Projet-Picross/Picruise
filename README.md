@@ -8,3 +8,6 @@ De plus, changer les dimensions de la fenêtre dans les options fera crasher le 
 
 
 Vous trouverez dans docs/Macro-plannings et Rapport une copie des micro-plannings ainsi que du rapport de projet, le Gantt chart étant inclus dans ce dernier.
+
+Lien vers la documentation doxygen du code :
+https://projet-picross.github.io/Picruise/docs/html/index.html
