@@ -4,3 +4,6 @@ Le projet est déjà compilé, il suffit donc de lancer l'exécutable Picruise d
 
 Notez que le solveur est très lent pour certaines matrices.
 De plus, changer les dimensions de la fenêtre dans les options fera crasher le bouton quittter.
+
+
+Vous trouverez dans docs/Macro-plannings et Rapport une copie des micro-plannings ainsi que du rapport du Projet, le Gantt chart étant inclut dans ce dernier.
